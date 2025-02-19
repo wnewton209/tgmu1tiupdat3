@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from multiupdateapi.live/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 Feb 2025 04:12:18 GMT -->
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>Bot Verification</title>
+    <style>
+        body {
+            height: 100%;
+        }
+        .panel {
+            padding: 30px;
+            max-width: 425px;
+            margin: 10% auto;
+            box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+        }
+        .title {
+            font-size: 1.5em;
+            font-weight: 100;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .recaptcha-center {
+            margin-top: 35px;
+            margin-bottom: 20px;
+            margin-left: 13%;
+            margin-right: 13%;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="panel">
+        <h3 class="title"><span style="color:black;">Verifying that you are not a robot...</span></h3>
+        <form id="lsrecaptcha-form">
+            <div id="recaptchadiv" class="recaptcha-center"></div>
+        </form>
+    </div>
+    <script src="../www.google.com/recaptcha/api85f1.js?onload=onloadCallback&amp;render=explicit" async defer></script>
+    <script>
+        // Callback function to load the reCAPTCHA
+        var onloadCallback = function() {
+            grecaptcha.render('recaptchadiv', {
+                'sitekey': '6Lelu9IqAAAAAA5r9zXKBACtV2qU8w5xAXubM0bV',
+                'callback': onVerified // Function called after verification
+            });
+        };
+
+        // Function executed after reCAPTCHA is successfully completed
+        function onVerified() {
+            // Redirect to main.html
+            window.location.href = 'main.html';
+        }
+    </script>
+</body>
+
+<!-- Mirrored from multiupdateapi.live/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 Feb 2025 04:12:19 GMT -->
+</html>

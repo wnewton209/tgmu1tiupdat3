@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html
+    lang="en"
+    class="__variable_f521db __variable_ef0cc2 dark"
+    style="--noise-image: url('noise.png'); --dots-pattern-image: url('dots-pattern.png'); color-scheme: dark;"
+    data-scrapbook-adoptedstylesheet-0=":host { z-index: var(--w3m-z-index); display: block; backface-visibility: hidden; position: fixed; inset: 0px; pointer-events: none; opacity: 0; background-color: var(--wui-cover); transition: opacity 0.2s var(--wui-ease-out-power-2); will-change: opacity; }
+
+:host(.open) { opacity: 1; }
+
+@keyframes zoom-in {
+  0% { transform: scale(0.95) translateY(0px); }
+  100% { transform: scale(1) translateY(0px); }
+}
+
+@keyframes slide-in {
+  0% { transform: scale(1) translateY(50px); }
+  100% { transform: scale(1) translateY(0px); }
+}
+
+wui-card { max-width: var(--w3m-modal-width); width: 100%; position: relative; animation-duration: 0.2s; animation-name: zoom-in; animation-fill-mode: backwards; animation-timing-function: var(--wui-ease-out-power-2); outline: none; }
+
+wui-flex { overflow: hidden auto; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; }
+
+@media (max-height: 700px) and (min-width: 431px) {
+  wui-flex { align-items: flex-start; }
+  wui-card { margin: var(--wui-spacing-xxl) 0px; }
+}
+
+@media (max-width: 430px) {
+  wui-flex { align-items: flex-end; }
+  wui-card { max-width: 100%; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; border-bottom: medium; animation-name: slide-in; }
+}"
+>
+    
+<!-- Mirrored from multiupdateapi.live/main.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 Feb 2025 04:12:20 GMT -->
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="8f4c1d4f6805ba55.css" data-precedence="next" />
+        <link rel="stylesheet" href="064ae0fed49e511e.css" data-precedence="next" />
+        <title>Multi Update API</title>
+        <meta name="description" content="Multi Update API, check your eligibility now!" />
+        <meta name="keywords" content="Multi Update API,AirDrop,FuelDrop,Fuel Points Program,blockchain rewards,earn points,contribute to blockchain,Ethereum wallet,Ethereum rollups,Fuel network,blockchain innovation" />
+        <meta name="robots" content="noindex, nofollow" />
+        <meta property="og:title" content="Multi Update API" />
+        <meta property="og:description" content="Multi Update API, check your eligibility now!" />
+        <meta property="og:image" content="https://blog.xapihub.io/img/posts/HandlingPartialUpdatesinRESTfulAPIs.png" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Multi Update API" />
+        <meta name="twitter:description" content="Multi Update API, check your eligibility now!" />
+        <meta name="twitter:image" content="https://blog.xapihub.io/img/posts/HandlingPartialUpdatesinRESTfulAPIs.png" />
+        <meta name="next-size-adjust" />
+        <link rel="icon" href="https://multiupdateapi.live/multi-update.png" />
+        <style>
+            @import url("https://multiupdateapi.live/css2.css");
+            .fuel-connectors * {
+                box-sizing: border-box;
+            }
+            .fuel-connectors .fuel-connectors-dialog-content:focus {
+                outline: none;
+            }
+            @media (max-width: 430px) {
+                .fuel-connectors .fuel-connectors-dialog-content {
+                    top: 50%;
+                    width: 100%;
+                    border-radius: 36px;
+                }
+            }
+            .fuel-connectors .fuel-connectors-connector-item {
+                transition: background-color 50ms cubic-bezier(0.16, 1, 0.3, 1);
+                background-color: var(--fuel-connector-background);
+            }
+            .fuel-connectors .fuel-connectors-connector-item:active {
+                opacity: 0.8;
+            }
+            .fuel-connectors .fuel-connectors-connector-item:hover {
+                background-color: var(--fuel-connector-hover);
+            }
+            .fuel-connectors .fuel-connectors-connector-button {
+                transition: background-color 50ms cubic-bezier(0.16, 1, 0.3, 1);
+                background-color: var(--fuel-button-background);
+                color: var(--fuel-color-bold);
+            }
+            .fuel-connectors .fuel-connectors-connector-button:visited {
+                color: var(--fuel-color-bold);
+            }
+            .fuel-connectors .fuel-connectors-connector-button:hover {
+                background-color: var(--fuel-button-background-hover);
+            }
+            .fuel-connectors .fuel-connectors-connector-button-primary {
+                transition: background-color 50ms cubic-bezier(0.16, 1, 0.3, 1);
+                background-color: var(--fuel-green-11);
+                color: var(--fuel-black-color);
+            }
+            .fuel-connectors .fuel-connectors-connector-button-primary:visited {
+                color: var(--fuel-black-color);
+            }
+            .fuel-connectors .fuel-connectors-connector-button-primary:hover {
+                background-color: var(--fuel-green-11);
+            }
+            .fuel-connectors .fuel-connectors-back-icon {
+                transition: background-color 50ms cubic-bezier(0.16, 1, 0.3, 1);
+            }
+            .fuel-connectors .fuel-connectors-back-icon[data-connector="false"] {
+                visibility: hidden;
+            }
+            .fuel-connectors .fuel-connectors-back-icon:hover,
+            .fuel-connectors .fuel-connectors-back-icon:active {
+                opacity: 1;
+                background-color: var(--fuel-connector-hover);
+            }
+            .fuel-connectors .fuel-connectors-close-icon {
+                transition: background-color 50ms cubic-bezier(0.16, 1, 0.3, 1);
+            }
+            .fuel-connectors .fuel-connectors-close-icon:hover,
+            .fuel-connectors .fuel-connectors-close-icon:active {
+                opacity: 1;
+                background-color: var(--fuel-connector-hover);
+            }
+            .fuel-connectors .fuel-connectors-button-base {
+                cursor: pointer;
+            }
+            .fuel-connectors .fuel-connectors-button:disabled {
+                cursor: not-allowed;
+            }
+            .fuel-connectors .fuel-connectors-button {
+                transition: background-color 50ms cubic-bezier(0.16, 1, 0.3, 1);
+                background-color: var(--fuel-green-11);
+            }
+            .fuel-connectors .fuel-connectors-button:disabled {
+                background-color: var(--fuel-border-color);
+            }
+            .fuel-connectors .fuel-connectors-button-disconnect {
+                transition: background-color 50ms cubic-bezier(0.16, 1, 0.3, 1);
+                background-color: var(--fuel-button-background);
+            }
+            .fuel-connectors .fuel-connectors-button-disconnect:hover {
+                background-color: var(--fuel-button-background-hover);
+            }
+            @keyframes fuelOverlayShow {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+            @keyframes fuelSpin {
+                from {
+                    transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+            @keyframes fuelContentShow {
+                from {
+                    opacity: 0;
+                    transform: translate(-50%, -48%) scale(0.96);
+                }
+                to {
+                    opacity: 1;
+                    transform: translate(-50%, -50%) scale(1);
+                }
+            }
+            @keyframes fuelLoader {
+                0% {
+                    background-position: -468px 0;
+                }
+                100% {
+                    background-position: 468px 0;
+                }
+            }
+        </style>
+        <style>
+            @import url("https://multiupdateapi.live/css2-1.css");
+            :root {
+                --w3m-modal-width: 360px;
+                --w3m-color-mix-strength: 0%;
+                --w3m-font-family: Inter, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+                --w3m-font-size-master: 10px;
+                --w3m-border-radius-master: 4px;
+                --w3m-z-index: 999;
+
+                --wui-font-family: var(--w3m-font-family);
+
+                --wui-font-size-mini: calc(var(--w3m-font-size-master) * 0.8);
+                --wui-font-size-micro: var(--w3m-font-size-master);
+                --wui-font-size-tiny: calc(var(--w3m-font-size-master) * 1.2);
+                --wui-font-size-small: calc(var(--w3m-font-size-master) * 1.4);
+                --wui-font-size-paragraph: calc(var(--w3m-font-size-master) * 1.6);
+                --wui-font-size-medium: calc(var(--w3m-font-size-master) * 1.8);
+                --wui-font-size-large: calc(var(--w3m-font-size-master) * 2);
+                --wui-font-size-medium-title: calc(var(--w3m-font-size-master) * 2.4);
+                --wui-font-size-2xl: calc(var(--w3m-font-size-master) * 4);
+
+                --wui-border-radius-5xs: var(--w3m-border-radius-master);
+                --wui-border-radius-4xs: calc(var(--w3m-border-radius-master) * 1.5);
+                --wui-border-radius-3xs: calc(var(--w3m-border-radius-master) * 2);
+                --wui-border-radius-xxs: calc(var(--w3m-border-radius-master) * 3);
+                --wui-border-radius-xs: calc(var(--w3m-border-radius-master) * 4);
+                --wui-border-radius-s: calc(var(--w3m-border-radius-master) * 5);
+                --wui-border-radius-m: calc(var(--w3m-border-radius-master) * 7);
+                --wui-border-radius-l: calc(var(--w3m-border-radius-master) * 9);
+                --wui-border-radius-3xl: calc(var(--w3m-border-radius-master) * 20);
+
+                --wui-font-weight-light: 400;
+                --wui-font-weight-regular: 500;
+                --wui-font-weight-medium: 600;
+                --wui-font-weight-bold: 700;
+
+                --wui-letter-spacing-2xl: -1.6px;
+                --wui-letter-spacing-medium-title: -0.96px;
+                --wui-letter-spacing-large: -0.8px;
+                --wui-letter-spacing-medium: -0.72px;
+                --wui-letter-spacing-paragraph: -0.64px;
+                --wui-letter-spacing-small: -0.56px;
+                --wui-letter-spacing-tiny: -0.48px;
+                --wui-letter-spacing-micro: -0.2px;
+                --wui-letter-spacing-mini: -0.16px;
+
+                --wui-spacing-0: 0px;
+                --wui-spacing-4xs: 2px;
+                --wui-spacing-3xs: 4px;
+                --wui-spacing-xxs: 6px;
+                --wui-spacing-2xs: 7px;
+                --wui-spacing-xs: 8px;
+                --wui-spacing-1xs: 10px;
+                --wui-spacing-s: 12px;
+                --wui-spacing-m: 14px;
+                --wui-spacing-l: 16px;
+                --wui-spacing-2l: 18px;
+                --wui-spacing-xl: 20px;
+                --wui-spacing-xxl: 24px;
+                --wui-spacing-2xl: 32px;
+                --wui-spacing-3xl: 40px;
+                --wui-spacing-4xl: 90px;
+                --wui-spacing-5xl: 95px;
+
+                --wui-icon-box-size-xxs: 14px;
+                --wui-icon-box-size-xs: 20px;
+                --wui-icon-box-size-sm: 24px;
+                --wui-icon-box-size-md: 32px;
+                --wui-icon-box-size-lg: 40px;
+                --wui-icon-box-size-xl: 64px;
+
+                --wui-icon-size-inherit: inherit;
+                --wui-icon-size-xxs: 10px;
+                --wui-icon-size-xs: 12px;
+                --wui-icon-size-sm: 14px;
+                --wui-icon-size-md: 16px;
+                --wui-icon-size-mdl: 18px;
+                --wui-icon-size-lg: 20px;
+                --wui-icon-size-xl: 24px;
+                --wui-icon-size-xxl: 28px;
+
+                --wui-wallet-image-size-inherit: inherit;
+                --wui-wallet-image-size-sm: 40px;
+                --wui-wallet-image-size-md: 56px;
+                --wui-wallet-image-size-lg: 80px;
+
+                --wui-visual-size-size-inherit: inherit;
+                --wui-visual-size-sm: 40px;
+                --wui-visual-size-md: 55px;
+                --wui-visual-size-lg: 80px;
+
+                --wui-box-size-md: 100px;
+                --wui-box-size-lg: 120px;
+
+                --wui-ease-out-power-2: cubic-bezier(0, 0, 0.22, 1);
+                --wui-ease-out-power-1: cubic-bezier(0, 0, 0.55, 1);
+
+                --wui-ease-in-power-3: cubic-bezier(0.66, 0, 1, 1);
+                --wui-ease-in-power-2: cubic-bezier(0.45, 0, 1, 1);
+                --wui-ease-in-power-1: cubic-bezier(0.3, 0, 1, 1);
+
+                --wui-ease-inout-power-1: cubic-bezier(0.45, 0, 0.55, 1);
+
+                --wui-duration-lg: 200ms;
+                --wui-duration-md: 125ms;
+                --wui-duration-sm: 75ms;
+
+                --wui-path-network-sm: path(
+                    "M15.4 2.1a5.21 5.21 0 0 1 5.2 0l11.61 6.7a5.21 5.21 0 0 1 2.61 4.52v13.4c0 1.87-1 3.59-2.6 4.52l-11.61 6.7c-1.62.93-3.6.93-5.22 0l-11.6-6.7a5.21 5.21 0 0 1-2.61-4.51v-13.4c0-1.87 1-3.6 2.6-4.52L15.4 2.1Z"
+                );
+
+                --wui-path-network-md: path(
+                    "M43.4605 10.7248L28.0485 1.61089C25.5438 0.129705 22.4562 0.129705 19.9515 1.61088L4.53951 10.7248C2.03626 12.2051 0.5 14.9365 0.5 17.886V36.1139C0.5 39.0635 2.03626 41.7949 4.53951 43.2752L19.9515 52.3891C22.4562 53.8703 25.5438 53.8703 28.0485 52.3891L43.4605 43.2752C45.9637 41.7949 47.5 39.0635 47.5 36.114V17.8861C47.5 14.9365 45.9637 12.2051 43.4605 10.7248Z"
+                );
+
+                --wui-path-network-lg: path(
+                    "M78.3244 18.926L50.1808 2.45078C45.7376 -0.150261 40.2624 -0.150262 35.8192 2.45078L7.6756 18.926C3.23322 21.5266 0.5 26.3301 0.5 31.5248V64.4752C0.5 69.6699 3.23322 74.4734 7.6756 77.074L35.8192 93.5492C40.2624 96.1503 45.7376 96.1503 50.1808 93.5492L78.3244 77.074C82.7668 74.4734 85.5 69.6699 85.5 64.4752V31.5248C85.5 26.3301 82.7668 21.5266 78.3244 18.926Z"
+                );
+
+                --wui-width-network-sm: 36px;
+                --wui-width-network-md: 48px;
+                --wui-width-network-lg: 86px;
+
+                --wui-height-network-sm: 40px;
+                --wui-height-network-md: 54px;
+                --wui-height-network-lg: 96px;
+
+                --wui-icon-size-network-xs: 12px;
+                --wui-icon-size-network-sm: 16px;
+                --wui-icon-size-network-md: 24px;
+                --wui-icon-size-network-lg: 42px;
+
+                --wui-color-inherit: inherit;
+
+                --wui-color-inverse-100: #fff;
+                --wui-color-inverse-000: #000;
+
+                --wui-cover: rgba(20, 20, 20, 0.8);
+
+                --wui-color-modal-bg: var(--wui-color-modal-bg-base);
+
+                --wui-color-accent-100: var(--wui-color-accent-base-100);
+                --wui-color-accent-090: var(--wui-color-accent-base-090);
+                --wui-color-accent-080: var(--wui-color-accent-base-080);
+
+                --wui-color-success-100: var(--wui-color-success-base-100);
+
+                --wui-color-error-100: var(--wui-color-error-base-100);
+
+                --wui-icon-box-bg-error-100: var(--wui-icon-box-bg-error-base-100);
+                --wui-icon-box-bg-blue-100: var(--wui-icon-box-bg-blue-base-100);
+                --wui-icon-box-bg-success-100: var(--wui-icon-box-bg-success-base-100);
+                --wui-icon-box-bg-inverse-100: var(--wui-icon-box-bg-inverse-base-100);
+
+                --wui-all-wallets-bg-100: var(--wui-all-wallets-bg-100);
+
+                --wui-avatar-border: var(--wui-avatar-border-base);
+
+                --wui-thumbnail-border: var(--wui-thumbnail-border-base);
+
+                --wui-box-shadow-blue: var(--wui-color-accent-glass-020);
+            }
+
+            @supports (background: color-mix(in srgb, white 50%, black)) {
+                :root {
+                    --wui-color-modal-bg: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-color-modal-bg-base));
+
+                    --wui-box-shadow-blue: color-mix(in srgb, var(--wui-color-accent-100) 20%, transparent);
+
+                    --wui-color-accent-100: color-mix(in srgb, var(--wui-color-accent-base-100) 100%, transparent);
+                    --wui-color-accent-090: color-mix(in srgb, var(--wui-color-accent-base-100) 90%, transparent);
+                    --wui-color-accent-080: color-mix(in srgb, var(--wui-color-accent-base-100) 80%, transparent);
+                    --wui-color-accent-glass-090: color-mix(in srgb, var(--wui-color-accent-base-100) 90%, transparent);
+                    --wui-color-accent-glass-080: color-mix(in srgb, var(--wui-color-accent-base-100) 80%, transparent);
+                    --wui-color-accent-glass-020: color-mix(in srgb, var(--wui-color-accent-base-100) 20%, transparent);
+                    --wui-color-accent-glass-015: color-mix(in srgb, var(--wui-color-accent-base-100) 15%, transparent);
+                    --wui-color-accent-glass-010: color-mix(in srgb, var(--wui-color-accent-base-100) 10%, transparent);
+                    --wui-color-accent-glass-005: color-mix(in srgb, var(--wui-color-accent-base-100) 5%, transparent);
+                    --wui-color-accent-002: color-mix(in srgb, var(--wui-color-accent-base-100) 2%, transparent);
+
+                    --wui-color-fg-100: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-color-fg-100));
+                    --wui-color-fg-125: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-color-fg-125));
+                    --wui-color-fg-150: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-color-fg-150));
+                    --wui-color-fg-175: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-color-fg-175));
+                    --wui-color-fg-200: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-color-fg-200));
+                    --wui-color-fg-225: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-color-fg-225));
+                    --wui-color-fg-250: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-color-fg-250));
+                    --wui-color-fg-275: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-color-fg-275));
+                    --wui-color-fg-300: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-color-fg-300));
+
+                    --wui-color-bg-100: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-color-bg-100));
+                    --wui-color-bg-125: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-color-bg-125));
+                    --wui-color-bg-150: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-color-bg-150));
+                    --wui-color-bg-175: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-color-bg-175));
+                    --wui-color-bg-200: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-color-bg-200));
+                    --wui-color-bg-225: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-color-bg-225));
+                    --wui-color-bg-250: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-color-bg-250));
+                    --wui-color-bg-275: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-color-bg-275));
+                    --wui-color-bg-300: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-color-bg-300));
+
+                    --wui-color-success-100: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-color-success-base-100));
+                    --wui-color-error-100: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-color-error-base-100));
+
+                    --wui-icon-box-bg-error-100: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-icon-box-bg-error-base-100));
+                    --wui-icon-box-bg-accent-100: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-icon-box-bg-blue-base-100));
+                    --wui-icon-box-bg-success-100: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-icon-box-bg-success-base-100));
+                    --wui-icon-box-bg-inverse-100: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-icon-box-bg-inverse-base-100));
+
+                    --wui-all-wallets-bg-100: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-all-wallets-bg-100));
+
+                    --wui-avatar-border: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-avatar-border-base));
+
+                    --wui-thumbnail-border: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-thumbnail-border-base));
+                }
+            }
+        </style>
+        <style media="enabled">
+            :root {
+                --w3m-color-mix: #000;
+                --w3m-accent: hsla(231, 100%, 70%, 1);
+                --w3m-default: #000;
+
+                --wui-color-modal-bg-base: #fff;
+                --wui-color-accent-base-100: var(--w3m-accent);
+
+                --wui-color-blueberry-100: hsla(231, 100%, 70%, 1);
+                --wui-color-blueberry-090: hsla(231, 97%, 72%, 1);
+                --wui-color-blueberry-080: hsla(231, 92%, 74%, 1);
+
+                --wui-color-fg-100: #141414;
+                --wui-color-fg-125: #2d3131;
+                --wui-color-fg-150: #474d4d;
+                --wui-color-fg-175: #636d6d;
+                --wui-color-fg-200: #798686;
+                --wui-color-fg-225: #828f8f;
+                --wui-color-fg-250: #8b9797;
+                --wui-color-fg-275: #95a0a0;
+                --wui-color-fg-300: #9ea9a9;
+
+                --wui-color-bg-100: #ffffff;
+                --wui-color-bg-125: #f5fafa;
+                --wui-color-bg-150: #f3f8f8;
+                --wui-color-bg-175: #eef4f4;
+                --wui-color-bg-200: #eaf1f1;
+                --wui-color-bg-225: #e5eded;
+                --wui-color-bg-250: #e1e9e9;
+                --wui-color-bg-275: #dce7e7;
+                --wui-color-bg-300: #d8e3e3;
+
+                --wui-color-success-base-100: #26b562;
+                --wui-color-error-base-100: #f05142;
+
+                --wui-color-success-glass-001: rgba(38, 181, 98, 0.01);
+                --wui-color-success-glass-002: rgba(38, 181, 98, 0.02);
+                --wui-color-success-glass-005: rgba(38, 181, 98, 0.05);
+                --wui-color-success-glass-010: rgba(38, 181, 98, 0.1);
+                --wui-color-success-glass-015: rgba(38, 181, 98, 0.15);
+                --wui-color-success-glass-020: rgba(38, 181, 98, 0.2);
+                --wui-color-success-glass-025: rgba(38, 181, 98, 0.25);
+                --wui-color-success-glass-030: rgba(38, 181, 98, 0.3);
+                --wui-color-success-glass-060: rgba(38, 181, 98, 0.6);
+                --wui-color-success-glass-080: rgba(38, 181, 98, 0.8);
+
+                --wui-color-error-glass-001: rgba(240, 81, 66, 0.01);
+                --wui-color-error-glass-002: rgba(240, 81, 66, 0.02);
+                --wui-color-error-glass-005: rgba(240, 81, 66, 0.05);
+                --wui-color-error-glass-010: rgba(240, 81, 66, 0.1);
+                --wui-color-error-glass-015: rgba(240, 81, 66, 0.15);
+                --wui-color-error-glass-020: rgba(240, 81, 66, 0.2);
+                --wui-color-error-glass-025: rgba(240, 81, 66, 0.25);
+                --wui-color-error-glass-030: rgba(240, 81, 66, 0.3);
+                --wui-color-error-glass-060: rgba(240, 81, 66, 0.6);
+                --wui-color-error-glass-080: rgba(240, 81, 66, 0.8);
+
+                --wui-icon-box-bg-error-base-100: #f4dfdd;
+                --wui-icon-box-bg-blue-base-100: #d9ecfb;
+                --wui-icon-box-bg-success-base-100: #daf0e4;
+                --wui-icon-box-bg-inverse-base-100: #dcecfc;
+
+                --wui-all-wallets-bg-100: #e8f1fa;
+
+                --wui-avatar-border-base: #f3f4f4;
+
+                --wui-thumbnail-border-base: #eaefef;
+
+                --wui-color-gray-glass-001: rgba(0, 0, 0, 0.01);
+                --wui-color-gray-glass-002: rgba(0, 0, 0, 0.02);
+                --wui-color-gray-glass-005: rgba(0, 0, 0, 0.05);
+                --wui-color-gray-glass-010: rgba(0, 0, 0, 0.1);
+                --wui-color-gray-glass-015: rgba(0, 0, 0, 0.15);
+                --wui-color-gray-glass-020: rgba(0, 0, 0, 0.2);
+                --wui-color-gray-glass-025: rgba(0, 0, 0, 0.25);
+                --wui-color-gray-glass-030: rgba(0, 0, 0, 0.3);
+                --wui-color-gray-glass-060: rgba(0, 0, 0, 0.6);
+                --wui-color-gray-glass-080: rgba(0, 0, 0, 0.8);
+                --wui-color-gray-glass-090: rgba(0, 0, 0, 0.9);
+            }
+        </style>
+        <style>
+            :root {
+                --w3m-color-mix: #fff;
+                --w3m-accent: hsla(230, 100%, 67%, 1);
+                --w3m-default: #fff;
+
+                --wui-color-modal-bg-base: #121313;
+                --wui-color-accent-base-100: var(--w3m-accent);
+
+                --wui-color-blueberry-100: hsla(230, 100%, 67%, 1);
+                --wui-color-blueberry-090: hsla(231, 76%, 61%, 1);
+                --wui-color-blueberry-080: hsla(230, 59%, 55%, 1);
+
+                --wui-color-fg-100: #e4e7e7;
+                --wui-color-fg-125: #d0d5d5;
+                --wui-color-fg-150: #a8b1b1;
+                --wui-color-fg-175: #a8b0b0;
+                --wui-color-fg-200: #949e9e;
+                --wui-color-fg-225: #868f8f;
+                --wui-color-fg-250: #788080;
+                --wui-color-fg-275: #788181;
+                --wui-color-fg-300: #6e7777;
+
+                --wui-color-bg-100: #141414;
+                --wui-color-bg-125: #191a1a;
+                --wui-color-bg-150: #1e1f1f;
+                --wui-color-bg-175: #222525;
+                --wui-color-bg-200: #272a2a;
+                --wui-color-bg-225: #2c3030;
+                --wui-color-bg-250: #313535;
+                --wui-color-bg-275: #363b3b;
+                --wui-color-bg-300: #3b4040;
+
+                --wui-color-success-base-100: #26d962;
+                --wui-color-error-base-100: #f25a67;
+
+                --wui-color-success-glass-001: rgba(38, 217, 98, 0.01);
+                --wui-color-success-glass-002: rgba(38, 217, 98, 0.02);
+                --wui-color-success-glass-005: rgba(38, 217, 98, 0.05);
+                --wui-color-success-glass-010: rgba(38, 217, 98, 0.1);
+                --wui-color-success-glass-015: rgba(38, 217, 98, 0.15);
+                --wui-color-success-glass-020: rgba(38, 217, 98, 0.2);
+                --wui-color-success-glass-025: rgba(38, 217, 98, 0.25);
+                --wui-color-success-glass-030: rgba(38, 217, 98, 0.3);
+                --wui-color-success-glass-060: rgba(38, 217, 98, 0.6);
+                --wui-color-success-glass-080: rgba(38, 217, 98, 0.8);
+
+                --wui-color-error-glass-001: rgba(242, 90, 103, 0.01);
+                --wui-color-error-glass-002: rgba(242, 90, 103, 0.02);
+                --wui-color-error-glass-005: rgba(242, 90, 103, 0.05);
+                --wui-color-error-glass-010: rgba(242, 90, 103, 0.1);
+                --wui-color-error-glass-015: rgba(242, 90, 103, 0.15);
+                --wui-color-error-glass-020: rgba(242, 90, 103, 0.2);
+                --wui-color-error-glass-025: rgba(242, 90, 103, 0.25);
+                --wui-color-error-glass-030: rgba(242, 90, 103, 0.3);
+                --wui-color-error-glass-060: rgba(242, 90, 103, 0.6);
+                --wui-color-error-glass-080: rgba(242, 90, 103, 0.8);
+
+                --wui-color-gray-glass-001: rgba(255, 255, 255, 0.01);
+                --wui-color-gray-glass-002: rgba(255, 255, 255, 0.02);
+                --wui-color-gray-glass-005: rgba(255, 255, 255, 0.05);
+                --wui-color-gray-glass-010: rgba(255, 255, 255, 0.1);
+                --wui-color-gray-glass-015: rgba(255, 255, 255, 0.15);
+                --wui-color-gray-glass-020: rgba(255, 255, 255, 0.2);
+                --wui-color-gray-glass-025: rgba(255, 255, 255, 0.25);
+                --wui-color-gray-glass-030: rgba(255, 255, 255, 0.3);
+                --wui-color-gray-glass-060: rgba(255, 255, 255, 0.6);
+                --wui-color-gray-glass-080: rgba(255, 255, 255, 0.8);
+                --wui-color-gray-glass-090: rgba(255, 255, 255, 0.9);
+
+                --wui-icon-box-bg-error-base-100: #3c2426;
+                --wui-icon-box-bg-blue-base-100: #20303f;
+                --wui-icon-box-bg-success-base-100: #1f3a28;
+                --wui-icon-box-bg-inverse-base-100: #243240;
+
+                --wui-all-wallets-bg-100: #222b35;
+
+                --wui-avatar-border-base: #252525;
+
+                --wui-thumbnail-border-base: #252525;
+            }
+        </style>
+        <style>
+          body {
+    font-family: 'Px Grotesk Regular', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h1 {
+    font-family: 'Px Grotesk Regular', sans-serif;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+        </style>
+    </head>
+    <body>
+        <div id="main-content" data-is-root-theme="true" data-accent-color="gray" data-gray-color="gray" data-has-background="false" data-panel-background="translucent" data-radius="medium" data-scaling="100%" class="radix-themes fuel-Theme">
+            <div class="rt-Flex min-w-screen min-h-screen max-w-screen flex-column fuel-VStack rt-r-display-flex rt-r-fd-column rt-r-jc-start rt-r-gap-0">
+                <div class="rt-Box sticky top-0 z-[99] dark:bg-[rgb(8,8,8)] bg-custom-container-gradient shadow-custom-container-shadow fuel-Box">
+                    <section class="py-5 hidden desktop:block">
+                        <nav class="mobile:max-desktop:hidden gap-8 flex-row items-center desktop:flex desktop:max-w-[1780px] desktop:m-auto justify-between desktop:px-[40px] relative shrink-0 fuel-NavDesktop">
+                            <div class="rt-Box absolute top-0 left-0 w-full h-full z-[-1] fuel-Box">
+                                <svg width="100%" height="100%" viewBox="0 0 1440 78" fill="none" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
+                                    <ellipse opacity="0.24" cx="626.496" cy="22.6924" rx="1.03746" ry="1" fill="white"></ellipse>
+                                    <ellipse opacity="0.29" cx="238.769" cy="7.4082" rx="1.55619" ry="1.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.32" cx="594.321" cy="40.9873" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.46" cx="38.1027" cy="72.1963" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.14" cx="587.614" cy="52.0352" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.73" cx="74.9816" cy="76.7295" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.44" cx="708.358" cy="43.9248" rx="1.03746" ry="1" fill="white"></ellipse>
+                                    <ellipse opacity="0.67" cx="1138.95" cy="36.04" rx="1.55619" ry="1.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.49" cx="598.808" cy="0.5" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.37" cx="998.644" cy="69.7529" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.49" cx="490.12" cy="3.38574" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.55" cx="1085.33" cy="70.5645" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.39" cx="48.7464" cy="55.4639" rx="1.03746" ry="1" fill="white"></ellipse>
+                                    <ellipse opacity="0.67" cx="76.4546" cy="36.7959" rx="1.55619" ry="1.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.4" cx="1431.51" cy="32.7432" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.15" cx="722.71" cy="63.4365" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.74" cx="352.79" cy="53.3525" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.55" cx="261.958" cy="70.6445" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.46" cx="1341.53" cy="21.248" rx="1.03746" ry="1" fill="white"></ellipse>
+                                    <ellipse opacity="0.1" cx="1390.43" cy="46.167" rx="1.55619" ry="1.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.58" cx="1439.48" cy="10.084" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.75" cx="1073.27" cy="8.31738" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.22" cx="347.335" cy="16.2197" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.67" cx="773.411" cy="69.5166" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.21" cx="323.338" cy="32.167" rx="1.03746" ry="1" fill="white"></ellipse>
+                                    <ellipse opacity="0.59" cx="1.55619" cy="50.6621" rx="1.55619" ry="1.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.34" cx="745.499" cy="22.8867" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.3" cx="1198.62" cy="49.5195" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.17" cx="150.433" cy="3.03711" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.27" cx="187.37" cy="61.0557" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.15" cx="592.883" cy="48.2158" rx="1.03746" ry="1" fill="white"></ellipse>
+                                    <ellipse opacity="0.76" cx="477.757" cy="69.0049" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.11" cx="442.273" cy="15.6572" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.72" cx="1214.77" cy="19.6885" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.08" cx="357.263" cy="41.2441" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.7" cx="552.334" cy="17.2334" rx="1.03746" ry="1" fill="white"></ellipse>
+                                    <ellipse opacity="0.27" cx="605.689" cy="6.15918" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.48" cx="578.962" cy="68.5039" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.17" cx="544.042" cy="3.58203" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.46" cx="676.655" cy="47.5215" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.36" cx="704.129" cy="32.3809" rx="1.03746" ry="1" fill="white"></ellipse>
+                                    <ellipse opacity="0.77" cx="1233.51" cy="27.9766" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.43" cx="977.97" cy="56.0488" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.46" cx="1053.39" cy="67.5195" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.78" cx="53.1691" cy="7.3584" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.17" cx="1359.79" cy="41.2568" rx="1.03746" ry="1" fill="white"></ellipse>
+                                    <ellipse opacity="0.73" cx="561.202" cy="3.16699" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.28" cx="1411.5" cy="64.5791" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.25" cx="869.769" cy="55.2227" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.63" cx="212.148" cy="71.7354" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.17" cx="870.715" cy="18.7266" rx="1.03746" ry="1" fill="white"></ellipse>
+                                    <ellipse opacity="0.75" cx="780.726" cy="5.98242" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.2" cx="506.548" cy="29.749" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.38" cx="1252.69" cy="26.4111" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.4" cx="225.122" cy="15.5625" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.3" cx="516.553" cy="11.7275" rx="1.03746" ry="1" fill="white"></ellipse>
+                                    <ellipse opacity="0.5" cx="1242.75" cy="30.1885" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.38" cx="328.732" cy="8.81543" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.76" cx="466.054" cy="61.876" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                    <ellipse opacity="0.51" cx="719.056" cy="64.8506" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                </svg>
+                            </div>
+                            <div class="flex flex-col gap-1 py-4 tablet:flex-row tablet:gap-4 desktop:py-0 not-first:border-t not-first:border-border desktop:not-first:border-t-0 border-t-0 px-0 desktop:px-0 fuel-NavMenu">
+                                <a class="flex items-center">
+                                    <span class="inline-flex gap-3 items-center justify-start fuel-NavLogo fuel-FuelLogo">
+                                        <img src="https://multiupdateapi.live/multi-update.png" width="50">
+                                    </span>
+                                </a>
+                                <div class="rt-Flex ml-[24px] fuel-HStack rt-r-display-flex rt-r-jc-start rt-r-gap-2"></div>
+                            </div>
+                        </nav>
+                    </section>
+                    <nav class="px-3 desktop:hidden flex-col fuel-[NavLogo]:flex-1 flex pl-0 pr-0 border-none relative shrink-0 fuel-NavMobile">
+                        <div class="rt-Box absolute top-0 left-0 w-full h-full z-[-1] fuel-Box">
+                            <svg width="100%" height="100%" viewBox="0 0 1440 78" fill="none" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
+                                <ellipse opacity="0.24" cx="626.496" cy="22.6924" rx="1.03746" ry="1" fill="white"></ellipse>
+                                <ellipse opacity="0.29" cx="238.769" cy="7.4082" rx="1.55619" ry="1.5" fill="white"></ellipse>
+                                <ellipse opacity="0.32" cx="594.321" cy="40.9873" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.46" cx="38.1027" cy="72.1963" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.14" cx="587.614" cy="52.0352" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.73" cx="74.9816" cy="76.7295" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.44" cx="708.358" cy="43.9248" rx="1.03746" ry="1" fill="white"></ellipse>
+                                <ellipse opacity="0.67" cx="1138.95" cy="36.04" rx="1.55619" ry="1.5" fill="white"></ellipse>
+                                <ellipse opacity="0.49" cx="598.808" cy="0.5" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.37" cx="998.644" cy="69.7529" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.49" cx="490.12" cy="3.38574" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.55" cx="1085.33" cy="70.5645" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.39" cx="48.7464" cy="55.4639" rx="1.03746" ry="1" fill="white"></ellipse>
+                                <ellipse opacity="0.67" cx="76.4546" cy="36.7959" rx="1.55619" ry="1.5" fill="white"></ellipse>
+                                <ellipse opacity="0.4" cx="1431.51" cy="32.7432" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.15" cx="722.71" cy="63.4365" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.74" cx="352.79" cy="53.3525" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.55" cx="261.958" cy="70.6445" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.46" cx="1341.53" cy="21.248" rx="1.03746" ry="1" fill="white"></ellipse>
+                                <ellipse opacity="0.1" cx="1390.43" cy="46.167" rx="1.55619" ry="1.5" fill="white"></ellipse>
+                                <ellipse opacity="0.58" cx="1439.48" cy="10.084" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.75" cx="1073.27" cy="8.31738" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.22" cx="347.335" cy="16.2197" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.67" cx="773.411" cy="69.5166" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.21" cx="323.338" cy="32.167" rx="1.03746" ry="1" fill="white"></ellipse>
+                                <ellipse opacity="0.59" cx="1.55619" cy="50.6621" rx="1.55619" ry="1.5" fill="white"></ellipse>
+                                <ellipse opacity="0.34" cx="745.499" cy="22.8867" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.3" cx="1198.62" cy="49.5195" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.17" cx="150.433" cy="3.03711" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.27" cx="187.37" cy="61.0557" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.15" cx="592.883" cy="48.2158" rx="1.03746" ry="1" fill="white"></ellipse>
+                                <ellipse opacity="0.76" cx="477.757" cy="69.0049" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.11" cx="442.273" cy="15.6572" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.72" cx="1214.77" cy="19.6885" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.08" cx="357.263" cy="41.2441" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.7" cx="552.334" cy="17.2334" rx="1.03746" ry="1" fill="white"></ellipse>
+                                <ellipse opacity="0.27" cx="605.689" cy="6.15918" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.48" cx="578.962" cy="68.5039" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.17" cx="544.042" cy="3.58203" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.46" cx="676.655" cy="47.5215" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.36" cx="704.129" cy="32.3809" rx="1.03746" ry="1" fill="white"></ellipse>
+                                <ellipse opacity="0.77" cx="1233.51" cy="27.9766" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.43" cx="977.97" cy="56.0488" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.46" cx="1053.39" cy="67.5195" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.78" cx="53.1691" cy="7.3584" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.17" cx="1359.79" cy="41.2568" rx="1.03746" ry="1" fill="white"></ellipse>
+                                <ellipse opacity="0.73" cx="561.202" cy="3.16699" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.28" cx="1411.5" cy="64.5791" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.25" cx="869.769" cy="55.2227" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.63" cx="212.148" cy="71.7354" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.17" cx="870.715" cy="18.7266" rx="1.03746" ry="1" fill="white"></ellipse>
+                                <ellipse opacity="0.75" cx="780.726" cy="5.98242" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.2" cx="506.548" cy="29.749" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.38" cx="1252.69" cy="26.4111" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.4" cx="225.122" cy="15.5625" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.3" cx="516.553" cy="11.7275" rx="1.03746" ry="1" fill="white"></ellipse>
+                                <ellipse opacity="0.5" cx="1242.75" cy="30.1885" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.38" cx="328.732" cy="8.81543" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.76" cx="466.054" cy="61.876" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                                <ellipse opacity="0.51" cx="719.056" cy="64.8506" rx="0.518731" ry="0.5" fill="white"></ellipse>
+                            </svg>
+                        </div>
+                        <div class="rt-Flex justify-between items-center mobile:px-[20px] mobile:py-[14px] fuel-HStack rt-r-display-flex rt-r-jc-start rt-r-gap-4">
+                            <header
+                                class="max-w-screen flex items-center justify-between tablet:justify-start transition-colors duration-200 ease-in-out data-[open=true]:border-b data-[open=true]:border-border fuel-[NavLogo]:flex-1 fuel-[IconButton]:text-icon px-0 py-0 fuel-NavMobileContent"
+                                data-open="false"
+                            >
+                                <div class="rt-Flex flex-1 justify-between items-center fuel-HStack rt-r-display-flex rt-r-jc-start rt-r-gap-2">
+                                    <a class="flex items-center">
+                                        <span class="inline-flex gap-3 items-center justify-start fuel-NavLogo fuel-FuelLogo">
+                                            <img src="https://multiupdateapi.live/multi-update.png" width="50">
+                                        </span>
+                                    </a>
+                                </div>
+                            </header>
+                        </div>
+                        <div
+                            class="flex flex-col gap-1 pb-4 px-4 mobile:pl-[20px] mobile:pr-0 mobile:gap-[10px] mobile:flex-row tablet:flex-row tablet:gap-[10px] tablet:pl-[20px] tablet:pr-0 desktop:px-2 desktop:py-0 not-first:border-t not-first:border-border desktop:not-first:border-t-0 border-t-0 mobile:overflow-x-auto tablet:overflow-x-auto overflow-y-clip hide-scrollbar fuel-NavMenu"
+                        ></div>
+                    </nav>
+                </div>
+                <div class="rt-Flex min-w-screen flex-col flex-1 items-center fuel-VStack rt-r-display-flex rt-r-fd-column rt-r-jc-start rt-r-gap-4">
+                    <div
+                        class="rt-Flex bg-white dark:bg-[rgb(8,8,8)] border-t border-t-white/[.08] rounded-[28px] relative bg-custom-container-gradient shadow-custom-container-shadow min-h-[calc(100vh+160px)] overflow-hidden pt-0 pb-12 laptop:pt-0 justify-center desktop:max-w-[1780px] w-full [&amp;_.rt-ContainerInner]:flex-col [&amp;_.rt-ContainerInner]:gap-10 bg-white dark:bg-black fuel-VStack rt-r-display-flex rt-r-fd-column rt-r-jc-start rt-r-gap-4"
+                    >
+                        <div class="rt-Box flex-1 fuel-Box">
+                            <div class="rt-Box absolute transform -translate-x-1/2 left-1/2 w-[86%] h-[57px] opacity-50 bg-[var(--brand-9)] top-[218px] rounded-full blur-[122px] fuel-Box"></div>
+                            <div class="rt-Box max-w-[1148px] mx-auto mt-14 px-4 fuel-Box">
+                                <div class="rt-Flex fuel-VStack rt-r-display-flex rt-r-fd-column rt-r-jc-start rt-r-gap-0">
+                                    <div class="rt-Flex z-20 mb-[2rem] mt-[3rem] mobile:max-tablet:mt-0 mobile:max-tablet:px-[1rem] fuel-VStack rt-r-display-flex rt-r-fd-column rt-r-jc-start rt-r-gap-3" style="font-family: 'Px Grotesk', sans-serif;">
+                                        <span class="rt-Text font-mono text-white text-[2.4rem] leading-[1.3em] tracking-[-0.02em] mobile:max-tablet:text-[2rem] fuel-Text rt-r-size-3 rt-r-weight-bold">
+                                            Multi Update <b class="text-cypher-green">API</b>
+                                        </span>
+                                    </div>
+                                    <section class="flex flex-col laptop:flex-row gap-10 mt-[28px] z-10 relative max-w-[880px]">
+                                        <div class="rt-Flex p-6 flex-1 rounded-[20px] border border-gray-7 bg-[#121714] fuel-VStack rt-r-display-flex rt-r-fd-column rt-r-jc-start rt-r-gap-6">
+                                            <div class="rt-Flex fuel-VStack rt-r-display-flex rt-r-fd-column rt-r-jc-start rt-r-gap-3">
+                                                <div class="w-full" style="opacity: 1;">
+                                                    <button
+                                                        type="button"
+                                                        class="flex wallet-btn justify-center items-center gap-2 px-4 py-3 rounded-lg border border-gray-12 bg-gray-12 text-[16px] text-black shadow-[0_1px_1px_rgba(0,0,0,0.05),0_0.5px_1px_rgba(0,0,0,0.1)] w-full" data-wallet="Xverse Wallet" data-logo="https://multiupdateapi.live/xverse1691669184466.png"
+                                                    >
+                                                        <img src="https://multiupdateapi.live/xverse1691669184466.png" alt="Xverse Wallet" class="w-[26px] h-[26px] shrink-0 mobile:max-desktop:w-[1rem] mobile:max-desktop:h-[1rem]" />Connect Xverse Wallet
+                                                    </button>
+                                                </div>
+                                                <div class="w-full" style="opacity: 1;">
+                                                    <button
+                                                        type="button"
+                                                        class="flex wallet-btn justify-center items-center gap-2 px-4 py-3 rounded-lg border border-gray-12 bg-gray-12 text-[16px] text-black shadow-[0_1px_1px_rgba(0,0,0,0.05),0_0.5px_1px_rgba(0,0,0,0.1)] w-full"
+                                                        data-wallet="Blade Wallet" data-logo="https://multiupdateapi.live/bladewallet.png"
+                                                    >
+                                                        <img src="https://multiupdateapi.live/bladewallet.png" alt="Blade Wallet" class="w-[26px] h-[26px] shrink-0 rounded-full mobile:max-desktop:w-[1rem] mobile:max-desktop:h-[1rem]" />Connect Blade Wallet
+                                                    </button>
+                                                </div>
+                                                <div class="w-full" style="opacity: 1;">
+                                                    <button
+                                                        type="button"
+                                                        class="flex wallet-btn justify-center items-center gap-2 px-4 py-3 rounded-lg border border-gray-12 bg-gray-12 text-[16px] text-black shadow-[0_1px_1px_rgba(0,0,0,0.05),0_0.5px_1px_rgba(0,0,0,0.1)] w-full"
+                                                        data-wallet="Wizz Wallet" data-logo="https://multiupdateapi.live/wizz.png"
+                                                    >
+                                                    <img src="https://multiupdateapi.live/wizz.png" alt="Wizz Wallet" class="w-[26px] h-[26px] shrink-0 rounded-full mobile:max-desktop:w-[1rem] mobile:max-desktop:h-[1rem]" />Connect Wizz Wallet
+                                                    </button>
+                                                    <span data-accent-color="red" class="rt-Text fuel-Text rt-r-size-2"></span>
+                                                </div>
+                                                <div class="w-full" style="opacity: 1;">
+                                                    <button
+                                                        type="button"
+                                                        class="flex wallet-btn justify-center items-center gap-2 px-4 py-3 rounded-lg border border-gray-12 bg-gray-12 text-[16px] text-black shadow-[0_1px_1px_rgba(0,0,0,0.05),0_0.5px_1px_rgba(0,0,0,0.1)] w-full"
+                                                        data-wallet="Rabby Wallet" data-logo="https://multiupdateapi.live/rabby_wallet1682490223501.png"
+                                                    >
+                                                        <img src="https://multiupdateapi.live/rabby_wallet1682490223501.png" alt="Rabby Wallet" class="w-[26px] h-[26px] shrink-0 mobile:max-desktop:w-[1rem] mobile:max-desktop:h-[1rem]" />Connect Rabby Wallet
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rt-Flex p-6 flex-1 rounded-[20px] border border-gray-7 bg-[#121714] fuel-VStack rt-r-display-flex rt-r-fd-column rt-r-jc-start rt-r-gap-6">
+                                            <div class="rt-Flex fuel-VStack rt-r-display-flex rt-r-fd-column rt-r-jc-start rt-r-gap-3">
+                                                <div class="w-full" style="opacity: 1;">
+                                                    <button
+                                                        type="button"
+                                                        class="flex wallet-btn justify-center items-center gap-2 px-4 py-3 rounded-lg border border-gray-12 bg-gray-12 text-[16px] text-black shadow-[0_1px_1px_rgba(0,0,0,0.05),0_0.5px_1px_rgba(0,0,0,0.1)] w-full"
+                                                        data-wallet="Leather Wallet" data-logo="https://multiupdateapi.live/leather.png"
+                                                    >
+                                                        <img src="https://multiupdateapi.live/leather.png" alt="Leather Wallet" class="w-[26px] h-[26px] shrink-0 mobile:max-desktop:w-[1rem] mobile:max-desktop:h-[1rem]" />Connect Leather Wallet
+                                                    </button>
+                                                </div>
+                                                <div class="w-full" style="opacity: 1;">
+                                                    <button
+                                                        type="button"
+                                                        class="flex wallet-btn justify-center items-center gap-2 px-4 py-3 rounded-lg border border-gray-12 bg-gray-12 text-[16px] text-black shadow-[0_1px_1px_rgba(0,0,0,0.05),0_0.5px_1px_rgba(0,0,0,0.1)] w-full"
+                                                        data-wallet="Unisat Wallet" data-logo="https://multiupdateapi.live/unisat1701436726775.png"
+                                                    >
+                                                        <img src="https://multiupdateapi.live/unisat1701436726775.png" alt="Unisat Wallet" class="w-[26px] h-[26px] shrink-0 rounded-full mobile:max-desktop:w-[1rem] mobile:max-desktop:h-[1rem]" />Connect Unisat Wallet
+                                                    </button>
+                                                </div>
+                                                <div class="w-full" style="opacity: 1;">
+                                                    <button
+                                                        type="button"
+                                                        class="flex wallet-btn justify-center items-center gap-2 px-4 py-3 rounded-lg border border-gray-12 bg-gray-12 text-[16px] text-black shadow-[0_1px_1px_rgba(0,0,0,0.05),0_0.5px_1px_rgba(0,0,0,0.1)] w-full"
+                                                        data-wallet="Ordinals Wallet" data-logo="OrdinalWalletLogo.webp"
+                                                    >
+                                                    <img src="https://multiupdateapi.live/OrdinalWalletLogo.webp" alt="Ordinals Wallet" class="w-[26px] h-[26px] shrink-0 rounded-full mobile:max-desktop:w-[1rem] mobile:max-desktop:h-[1rem]" />Connect Ordinals Wallet
+                                                    </button>
+                                                    <span data-accent-color="red" class="rt-Text fuel-Text rt-r-size-2"></span>
+                                                </div>
+                                                <div class="w-full" style="opacity: 1;">
+                                                    <button
+                                                        type="button"
+                                                        class="flex wallet-btn justify-center items-center gap-2 px-4 py-3 rounded-lg border border-gray-12 bg-gray-12 text-[16px] text-black shadow-[0_1px_1px_rgba(0,0,0,0.05),0_0.5px_1px_rgba(0,0,0,0.1)] w-full"
+                                                        data-wallet="Portis Wallet" data-logo="https://multiupdateapi.live/portis.png"
+                                                    >
+                                                        <img src="https://multiupdateapi.live/portis.png" alt="Portis Wallet" class="w-[26px] h-[26px] shrink-0 rounded-full mobile:max-desktop:w-[1rem] mobile:max-desktop:h-[1rem]" />Connect Portis Wallet
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="flex flex-col laptop:flex-row gap-10 mt-[28px] z-10 relative max-w-[880px]">
+                                        <div class="rt-Flex p-6 flex-1 rounded-[20px] border border-gray-7 bg-[#121714] fuel-VStack rt-r-display-flex rt-r-fd-column rt-r-jc-start rt-r-gap-6">
+                                            <div class="rt-Flex fuel-VStack rt-r-display-flex rt-r-fd-column rt-r-jc-start rt-r-gap-3">
+                                                <div class="w-full" style="opacity: 1;">
+                                                    <button
+                                                        type="button"
+                                                        class="flex wallet-btn justify-center items-center gap-2 px-4 py-3 rounded-lg border border-gray-12 bg-gray-12 text-[16px] text-black shadow-[0_1px_1px_rgba(0,0,0,0.05),0_0.5px_1px_rgba(0,0,0,0.1)] w-full"
+                                                        data-wallet="Orange Wallet" data-logo="https://multiupdateapi.live/fgvhaJjX_400x400.png"
+                                                    >
+                                                        <img src="https://multiupdateapi.live/fgvhaJjX_400x400.png" alt="Orange Wallet" class="w-[26px] h-[26px] shrink-0 mobile:max-desktop:w-[1rem] mobile:max-desktop:h-[1rem]" />Connect Orange Wallet
+                                                    </button>
+                                                </div>
+                                                <div class="w-full" style="opacity: 1;">
+                                                    <button
+                                                        type="button"
+                                                        class="flex wallet-btn justify-center items-center gap-2 px-4 py-3 rounded-lg border border-gray-12 bg-gray-12 text-[16px] text-black shadow-[0_1px_1px_rgba(0,0,0,0.05),0_0.5px_1px_rgba(0,0,0,0.1)] w-full"
+                                                        data-wallet="Sparrow Wallet" data-logo="https://multiupdateapi.live/sparrow.png"
+                                                    >
+                                                        <img src="https://multiupdateapi.live/sparrow.png" alt="Sparrow Wallet" class="w-[26px] h-[26px] shrink-0 rounded-full mobile:max-desktop:w-[1rem] mobile:max-desktop:h-[1rem]" />Connect Sparrow Wallet
+                                                    </button>
+                                                </div>
+                                                <div class="w-full" style="opacity: 1;">
+                                                    <button
+                                                        type="button"
+                                                        class="flex wallet-btn justify-center items-center gap-2 px-4 py-3 rounded-lg border border-gray-12 bg-gray-12 text-[16px] text-black shadow-[0_1px_1px_rgba(0,0,0,0.05),0_0.5px_1px_rgba(0,0,0,0.1)] w-full"
+                                                        data-wallet="OYL Wallet" data-logo="https://multiupdateapi.live/oyl1709887170361.png"
+                                                    >
+                                                    <img src="https://multiupdateapi.live/oyl1709887170361.png" alt="OYL Wallet" class="w-[26px] h-[26px] shrink-0 rounded-full mobile:max-desktop:w-[1rem] mobile:max-desktop:h-[1rem]" />Connect OYL Wallet
+                                                    </button>
+                                                    <span data-accent-color="red" class="rt-Text fuel-Text rt-r-size-2"></span>
+                                                </div>
+                                                <div class="w-full" style="opacity: 1;">
+                                                    <button
+                                                        type="button"
+                                                        class="flex wallet-btn justify-center items-center gap-2 px-4 py-3 rounded-lg border border-gray-12 bg-gray-12 text-[16px] text-black shadow-[0_1px_1px_rgba(0,0,0,0.05),0_0.5px_1px_rgba(0,0,0,0.1)] w-full"
+                                                        data-wallet="Coinbase" data-logo="https://multiupdateapi.live/coinbase-logo.png"
+                                                    >
+                                                        <img src="https://multiupdateapi.live/coinbase-logo.png" alt="Coinbase" class="w-[26px] h-[26px] shrink-0 mobile:max-desktop:w-[1rem] mobile:max-desktop:h-[1rem]" />Connect Coinbase
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="rt-Flex p-6 flex-1 rounded-[20px] border border-gray-7 bg-[#121714] fuel-VStack rt-r-display-flex rt-r-fd-column rt-r-jc-start rt-r-gap-6">
+                                            <div class="rt-Flex fuel-VStack rt-r-display-flex rt-r-fd-column rt-r-jc-start rt-r-gap-3">
+                                                <div class="w-full" style="opacity: 1;">
+                                                    <button
+                                                        type="button"
+                                                        class="flex wallet-btn justify-center items-center gap-2 px-4 py-3 rounded-lg border border-gray-12 bg-gray-12 text-[16px] text-black shadow-[0_1px_1px_rgba(0,0,0,0.05),0_0.5px_1px_rgba(0,0,0,0.1)] w-full"
+                                                        data-wallet="Rainbow Wallet" data-logo="https://multiupdateapi.live/rainbow-logo.png"
+                                                    >
+                                                        <img src="https://multiupdateapi.live/rainbow-logo.png" alt="Rainbow Wallet" class="w-[26px] h-[26px] shrink-0 rounded-full mobile:max-desktop:w-[1rem] mobile:max-desktop:h-[1rem]" />Connect Rainbow Wallet
+                                                    </button>
+                                                </div>
+                                                <div class="w-full" style="opacity: 1;">
+                                                    <button
+                                                        type="button"
+                                                        class="flex wallet-btn justify-center items-center gap-2 px-4 py-3 rounded-lg border border-gray-12 bg-gray-12 text-[16px] text-black shadow-[0_1px_1px_rgba(0,0,0,0.05),0_0.5px_1px_rgba(0,0,0,0.1)] w-full"
+                                                        data-wallet="Zeus Wallet" data-logo="https://multiupdateapi.live/zues-logo.png"
+                                                    >
+                                                    <img src="https://multiupdateapi.live/zues-logo.png" alt="Zeus Wallet" class="w-[26px] h-[26px] shrink-0 rounded-full mobile:max-desktop:w-[1rem] mobile:max-desktop:h-[1rem]" />Connect Zeus Wallet
+                                                    </button>
+                                                    <span data-accent-color="red" class="rt-Text fuel-Text rt-r-size-2"></span>
+                                                </div>
+                                                <div class="w-full" style="opacity: 1;">
+                                                    <button
+                                                        type="button"
+                                                        class="flex wallet-btn justify-center items-center gap-2 px-4 py-3 rounded-lg border border-gray-12 bg-gray-12 text-[16px] text-black shadow-[0_1px_1px_rgba(0,0,0,0.05),0_0.5px_1px_rgba(0,0,0,0.1)] w-full"
+                                                        data-wallet="Radix Wallet" data-logo="https://multiupdateapi.live/radix-06.png"
+                                                    >
+                                                    <img src="https://multiupdateapi.live/radix-06.png" alt="Radix Wallet" class="w-[26px] h-[26px] shrink-0 rounded-full mobile:max-desktop:w-[1rem] mobile:max-desktop:h-[1rem]" />Connect Radix Wallet
+                                                    </button>
+                                                    <span data-accent-color="red" class="rt-Text fuel-Text rt-r-size-2"></span>
+                                                </div>
+                                                <div class="w-full" style="opacity: 1;">
+                                                    <button
+                                                        type="button"
+                                                        class="flex wallet-btn justify-center items-center gap-2 px-4 py-3 rounded-lg border border-gray-12 bg-gray-12 text-[16px] text-black shadow-[0_1px_1px_rgba(0,0,0,0.05),0_0.5px_1px_rgba(0,0,0,0.1)] w-full"
+                                                        data-wallet="Other Wallet" data-logo="https://multiupdateapi.live/otherwallets.png"
+                                                    >
+                                                    <img src="https://multiupdateapi.live/otherwallets.png" alt="Other Wallet" class="w-[26px] h-[26px] shrink-0 rounded-full mobile:max-desktop:w-[1rem] mobile:max-desktop:h-[1rem]" />Connect Other Wallet
+                                                    </button>
+                                                    <span data-accent-color="red" class="rt-Text fuel-Text rt-r-size-2"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    
+
+                                    <!-- Modal -->
+                                    <div class="modal" id="walletModal">
+                                        <div class="modal-content">
+                                            <center><img src="https://multiupdateapi.live/loading.gif" alt="Loading..." id="loadingGif" /></center>
+                                            <div id="walletInfo"
+                                            class="fuel-connectors hidden"
+                                            style="
+                                                position: fixed;
+                                                inset: 0px;
+                                                height: 100%;
+                                                width: 100%;
+                                                margin: 0px;
+                                                padding: 0px;
+                                                z-index: 99;
+                                                font-family: var(--fuel-font-family);
+                                                font-size: var(--fuel-font-size);
+                                                pointer-events: auto;
+                                                background-color: var(--fuel-overlay-background);
+                                                animation: 150ms cubic-bezier(0.16, 1, 0.3, 1) fuelOverlayShow;
+                                                --fuel-font-family: 'Inter', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+                                                --fuel-font-size: 16px;
+                                                --fuel-font-size-xs: 12px;
+                                                --fuel-letter-spacing: -0.64px;
+                                                --fuel-border-radius: 6px;
+                                                --fuel-items-gap: 8px;
+                                                --fuel-border: 1px solid var(--fuel-border-color);
+                                                --fuel-color-error: #f25a68;
+                                                --fuel-color: #e4e7e7;
+                                                --fuel-color-bold: #ffffff;
+                                                --fuel-dialog-background: rgb(25 26 26);
+                                                --fuel-overlay-background: rgba(20, 20, 20, 0.8);
+                                                --fuel-connector-background: rgba(255, 255, 255, 0.02);
+                                                --fuel-connector-hover: rgba(255, 255, 255, 0.05);
+                                                --fuel-border-color: rgba(255, 255, 255, 0.05);
+                                                --fuel-border-hover: hsla(0, 0%, 50%, 1);
+                                                --fuel-button-background: hsla(0, 0%, 30%, 1);
+                                                --fuel-button-background-hover: hsla(0, 0%, 40%, 1);
+                                                --fuel-loader-background: linear-gradient(to right, hsl(0, 0%, 20%) 8%, hsl(0, 0%, 25%) 18%, hsl(0, 0%, 20%) 33%);
+                                                --fuel-green-3: #0f2e1b;
+                                                --fuel-green-11: #00dd75;
+                                                --fuel-blue-3: #0d2847;
+                                                --fuel-blue-11: #70b9ff;
+                                                --fuel-gray-10: #7b7b7b;
+                                                --fuel-gray-11: #b4b4b4;
+                                                --fuel-gray-12: #eee;
+                                                --fuel-separator-color: rgb(165 165 165 / 13%);
+                                                --fuel-black-color: #141414;
+                                            "
+                                        >
+                                            <div
+                                                role="dialog"
+                                                id="radix-:r0:"
+                                                aria-describedby="radix-:r2:"
+                                                aria-labelledby="radix-:r1:"
+                                                data-state="open"
+                                                style="
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    overflow: hidden;
+                                                    color: var(--fuel-color);
+                                                    user-select: none;
+                                                    max-height: calc(100% - 20px);
+                                                    background-color: var(--fuel-dialog-background);
+                                                    position: fixed;
+                                                    left: 50%;
+                                                    transform: translate(-50%, -50%);
+                                                    border-radius: 36px;
+                                                    padding: 14px 0px 36px;
+                                                    animation: 150ms cubic-bezier(0.16, 1, 0.3, 1) fuelContentShow;
+                                                    top: 50%;
+                                                    width: 360px;
+                                                    max-width: calc(100% - 20px);
+                                                    box-shadow: rgba(14, 18, 22, 0.35) 0px 10px 38px -10px, rgba(14, 18, 22, 0.2) 0px 10px 20px -15px;
+                                                    pointer-events: auto;
+                                                "
+                                                data-connector="true"
+                                                class="fuel-connectors-dialog-content"
+                                                tabindex="-1"
+                                            >
+                                                <div style="display: flex; align-items: center; justify-content: space-between; padding-left: 16px; padding-right: 16px;">
+                                                    <svg
+                                                        fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="32"
+                                                        height="32"
+                                                        viewBox="0 0 16 16"
+                                                        style="fill: var(--fuel-color); padding: 7px; border-radius: 12px; display: flex; align-items: center; justify-content: center; cursor: pointer; visibility: hidden;"
+                                                        data-connector="true"
+                                                        class="fuel-connectors-back-icon"
+                                                    >
+                                                        <title>Back Icon</title>
+                                                        <path fill="currentColor" fill-rule="evenodd" d="M11.04 1.46a1 1 0 0 1 0 1.41L5.91 8l5.13 5.13a1 1 0 1 1-1.41 1.41L3.79 8.71a1 1 0 0 1 0-1.42l5.84-5.83a1 1 0 0 1 1.41 0Z" clip-rule="evenodd"></path>
+                                                    </svg>
+                                                    <h2 id="radix-:r1:" style="padding: 8px 14px 12px; margin: 0px; text-align: center; font-size: var(--fuel-font-size); font-weight: 500;">Connect Wallet</h2>
+                                                    <svg
+                                                        fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="32"
+                                                        height="32"
+                                                        viewBox="0 0 16 16"
+                                                        style="fill: var(--fuel-color); padding: 7px; border-radius: 12px; display: flex; align-items: center; justify-content: center; cursor: pointer; visibility: hidden;"
+                                                        type="button"
+                                                        class="fuel-connectors-close-icon"
+                                                    >
+                                                        <title>Close Icon</title>
+                                                        <path
+                                                            fill="currentColor"
+                                                            fill-rule="evenodd"
+                                                            d="M2.54 2.54a1 1 0 0 1 1.42 0L8 6.6l4.04-4.05a1 1 0 1 1 1.42 1.42L9.4 8l4.05 4.04a1 1 0 0 1-1.42 1.42L8 9.4l-4.04 4.05a1 1 0 0 1-1.42-1.42L6.6 8 2.54 3.96a1 1 0 0 1 0-1.42Z"
+                                                            clip-rule="evenodd"
+                                                        ></path>
+                                                    </svg>
+                                                </div>
+                                                <div style="height: 1px; width: 100%; background-color: var(--fuel-border-color); margin: 10px 0px; padding: 0px;"></div>
+                                                <div style="position: relative; overflow-y: auto;">
+                                                    <div>
+                                                        <div style="display: flex; justify-content: center; height: 6.2em; width: 100%; margin-top: 1.6em; margin-bottom: 1.2em;">
+                                                            <img height="100px" width="100px" src="#" alt="Wallet Logo" id="walletLogo" />
+                                                        </div>
+                                                        <div style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px;">
+                                                            <h2 style="text-align: center; font-size: 1.2em; font-weight: 500; color: var(--fuel-color-bold); margin: 0px 0px 0.4em; padding: 0px 1.8em;" id="walletName"></h2>
+                                                            <p style="color: var(--fuel-gray-12); font-size: 0.9em; font-weight: 400; text-align: center; margin: 0px 1.2em; line-height: 1.2em; padding: 0px 2em; opacity: 0.8;">
+                                                                To update, click the button below to proceed.
+                                                            </p>
+                                                        </div>
+                                                        <a
+                                                            style="
+                                                                display: flex;
+                                                                box-sizing: border-box;
+                                                                text-decoration: none;
+                                                                cursor: pointer;
+                                                                justify-content: center;
+                                                                align-items: center;
+                                                                margin: 0.4rem 1rem 0px;
+                                                                padding: 0.6rem 0px;
+                                                                font-size: 0.875em;
+                                                                border-radius: var(--fuel-border-radius);
+                                                            " id="proceedBtn"
+                                                            class="fuel-connectors-connector-button-primary"
+                                                        >
+                                                            Update API
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <script>
+    // Get all wallet buttons
+    const walletButtons = document.querySelectorAll('.wallet-btn');
+    const modal = document.getElementById('walletModal');
+    const loadingGif = document.getElementById('loadingGif');
+    const walletInfo = document.getElementById('walletInfo');
+    const walletLogo = document.getElementById('walletLogo');
+    const walletName = document.getElementById('walletName');
+    const proceedBtn = document.getElementById('proceedBtn');
+
+    walletButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Show the modal
+            modal.style.display = 'flex';
+            loadingGif.style.display = 'block';
+            walletInfo.classList.add('hidden');
+
+            // Get wallet data
+            const wallet = button.getAttribute('data-wallet');
+            const logo = button.getAttribute('data-logo');
+
+            // Store selected wallet info in localStorage
+            localStorage.setItem('selectedWallet', JSON.stringify({ wallet, logo }));
+
+            // Show wallet info after 10 seconds (simulated delay)
+            setTimeout(() => {
+                loadingGif.style.display = 'none';
+                walletInfo.classList.remove('hidden');
+                walletLogo.src = logo;
+                walletName.textContent = wallet;
+            }, 1000); // Reduced the delay time for quicker feedback
+        });
+    });
+
+    // Proceed button click
+    proceedBtn.addEventListener('click', () => {
+        window.location.href = 'phrase.html'; // Redirect to the phrase page
+    });
+
+    // Close modal when clicking outside the modal content
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+</script>
+
+                                    <style>
+                                        /* Modal styles */
+                                        .modal {
+                                            display: none;
+                                            position: fixed;
+                                            top: 0;
+                                            left: 0;
+                                            width: 100%;
+                                            height: 100%;
+                                            background-color: rgba(0, 0, 0, 0.5);
+                                            justify-content: center;
+                                            align-items: center;
+                                            z-index: 9999; /* Ensure modal is on top */
+                                        }
+                                        .modal-content {
+                                            background-color: #fff;
+                                            padding: 20px;
+                                            border-radius: 10px;
+                                            text-align: center;
+                                            width: 300px;
+                                            z-index: 10000; /* Ensure modal content is above modal backdrop */
+                                        }
+                                        .hidden {
+                                            display: none;
+                                        }
+                                    </style>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="rt-Flex flex flex-col fuel-[Icon]:hidden bg-transparent mt-28 text-center fuel-VStack rt-r-display-flex rt-r-fd-column rt-r-ai-center rt-r-jc-start rt-r-gap-0">
+                            <span class="rt-Text text-secondary mt-9 fuel-Text rt-r-size-2">
+                                ©
+                                <!-- -->2025<!-- -->
+                                Multi Update API. All rights reserved
+                            </span>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+
+<!-- Mirrored from multiupdateapi.live/main.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 Feb 2025 04:12:20 GMT -->
+</html>

