@@ -43,13 +43,13 @@
       
     </form>
     </div>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script>
-        // Callback function to load the reCAPTCHA
-        var onloadCallback = function() {
-            grecaptcha.render('recaptchadiv', {
-                'sitekey': '6LdPttsqAAAAANhOFJWFrj5iALEyTNUXeDCLU9XQ',
-                'callback': onVerified // Function called after verification
+     <script type="text/javascript">
+  var onloadCallback = function() {
+    alert("grecaptcha is ready!");
+  };
+ // Function called after verification
             });
         };
 
